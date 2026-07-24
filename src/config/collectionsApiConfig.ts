@@ -42,7 +42,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					icon: "https://www.20210701.xyz/icon.jpeg",
 					enabled: true,
 				},
-                {
+				{
 					name: "Qgxs | 友链导航",
 					url: "https://dh.20210701.xyz/",
 					description: "QGXS博客友链，发现更多优质网站。",
