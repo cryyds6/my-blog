@@ -1,6 +1,6 @@
 ---
 title: 使用AI提示词，让AI快速修改符合规范的文章
-published: 2026-01-05
+published: 2025-11-05
 description: 介绍如何利用定制的AI提示词，快速将文章草稿处理成符合Mizuki Astro博客规范的Markdown文档。
 tags: ["技术", "效率", "AI", "博客"]
 category: 资源推荐
