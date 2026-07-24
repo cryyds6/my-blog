@@ -29,8 +29,8 @@ const buildNavBarConfig = (): NavBarConfig => {
 	if (siteConfig.pages.guestbook) {
 		contactChildren.push(LinkPreset.Guestbook);
 	}
-	contactChildren.push(LinkPreset.QQGroup);
-
+	// contactChildren.push(LinkPreset.QQGroup);
+    
 	const contactNav: NavBarLink | null =
 		contactChildren.length > 0
 			? {
@@ -52,6 +52,10 @@ const buildNavBarConfig = (): NavBarConfig => {
 	}
 	myChildren.push(LinkPreset.Music);
 	myChildren.push(LinkPreset.About);
+    myChildren.push(LinkPreset.Memorial);
+	myChildren.push(LinkPreset.ImageBed);
+	myChildren.push(LinkPreset.Monitoring);
+	myChildren.push(LinkPreset.SBTI);
 
 	const myNav: NavBarLink = {
 		...LinkPresets[LinkPreset.NavMy],
@@ -61,7 +65,7 @@ const buildNavBarConfig = (): NavBarConfig => {
 	// 4. 统一组装导航栏链接（顺序：主页 → 菲比啾比 → 工具导航 → 文章 → 联系我 → 我的）
 	const links: (NavBarLink | LinkPreset)[] = [
 		LinkPreset.Home,
-		LinkPreset.Feibichi,
+		// LinkPreset.Feibichi,
 		...(siteConfig.pages.collections ? [LinkPreset.Collections] : []),
 		postsNav,
 		...(contactNav ? [contactNav] : []),

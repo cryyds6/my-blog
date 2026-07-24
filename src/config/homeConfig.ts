@@ -15,19 +15,19 @@ export const homeConfig: HomeConfig = {
 	avatarOffWork: "assets/images/avatar-work-off.webp",
 
 	// 名字
-	name: "MmzMing",
+	name: "QGXS",
 
 	// 首页展示名字（留空则使用 name）
-	displayName: "MmzMing",
+	displayName: "QGXS",
 
 	// 名字右侧徽章文字（如 QQ 号）
-	nameBadge: "B站：Mmz明崽",
+	nameBadge: "哈基墩",
 
 	// 职业/身份标签
-	occupation: "[(伪)全栈工程师[全干工程师] / 技术博主]",
+	occupation: "[JLDU屋里系 [赛博隐士]/ 卧室CEO]",
 
 	// 个人签名（支持多条，会循环打字+删除效果）
-	bio: ["且视他人之疑目如盏盏鬼火，大胆地去走你的夜路"],
+	bio: ["且视他人之疑目如盏盏鬼火，大胆地去走你的夜路""海内存知己，天涯若比邻""在我的后园，可以看见墙外有两株树，一株是枣树，还有一株也是枣树。"],
 
 	hero: {
 		backgroundImage: "/assets/images/home/home.webp",
@@ -212,25 +212,25 @@ export const homeConfig: HomeConfig = {
 		{
 			name: "qq",
 			icon: "fa7-brands:qq",
-			url: "https://qm.qq.com/q/2R07cjGTZ0",
+			url: "https://qm.qq.com/q/S7mid6lIA4",
 			showName: false,
 		},
 		{
 			name: "B站",
 			icon: "fa7-brands:bilibili",
-			url: "https://space.bilibili.com/15446538",
+			url: "https://b23.tv/nrKjM15",
 			showName: false,
 		},
 		{
 			name: "GitHub",
 			icon: "fa7-brands:github",
-			url: "https://github.com/MmzMing",
+			url: "https://github.com/cryyds6",
 			showName: false,
 		},
 		{
-			name: "站内留言",
-			icon: "material-symbols:chat-rounded",
-			url: "/guestbook/",
+			name: "Email",
+			icon: "fa7-solid:envelope",
+			url: "mailto:crqgxs@qq.com",
 			showName: false,
 		},
 		{
