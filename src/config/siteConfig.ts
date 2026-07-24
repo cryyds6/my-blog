@@ -7,20 +7,20 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "MmzMing的博客",
+	title: "Qgxs的博客",
 
 	// 站点副标题
-	subtitle: "MmzMing",
+	subtitle: "Qgxs",
 
 	// 站点 URL
-	site_url: "https://tblog.mmzhiku.xyz",
+	site_url: "https://www.20210701.xyz",
 
 	// 站点描述
-	description: "mmzming的博客，记录个人学习、工作、AI相关的内容",
+	description: "Qgxs的博客，记录个人学习、工作、AI相关的内容",
 
 	// 站点关键词
 	keywords: [
-		"MmzMing",
+		"Qgxs",
 		"JAVA",
 		"AI",
 		"Astro",
@@ -111,13 +111,13 @@ export const siteConfig: SiteConfig = {
 			alt: "logo",
 		},
 		// 导航栏标题
-		title: "MmzMing的博客",
+		title: "Qgxs的博客",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 	},
 
 	// 站点开始日期，用于统计运行天数
-	siteStartDate: "2026-05-07",
+	siteStartDate: "2025-01-31",
 
 	// 站点时区（IANA 时区字符串），用于格式化bangumi、rss里的构建日期时间等等..
 	// 示例："Asia/Shanghai", "UTC", 如果为空，则按照构建服务器的时区进行时区转换
@@ -158,7 +158,7 @@ export const siteConfig: SiteConfig = {
 		// 赞助页面开关
 		sponsor: true,
 		// 留言板页面开关，需要配置评论系统
-		guestbook: true,
+		guestbook: false,
 		// 相册页面开关
 		gallery: true,
 		// 收藏API页面开关
@@ -205,9 +205,9 @@ export const siteConfig: SiteConfig = {
 		microsoftClarityId: "",
 		// Umami 统计配置
 		umamiAnalytics: {
-			websiteId: "5907656e-d254-4c9e-ad73-5ce40bf184bb",
-			shareId: "uAfsjwbIKgVPjxtc",
-			scriptUrl: "https://stats.mmzhiku.xyz/script.js",
+			websiteId: "2170479d-b6c2-4b4b-adda-794f1c42a607",
+			shareId: "WZogKIY0xxKQYiKm",
+			scriptUrl: "https://cloud.umami.is/script.js",
 			// 是否追踪出站链接
 			trackOutboundLinks: true,
 			// 是否收集浏览器性能指标
@@ -249,7 +249,7 @@ export const siteConfig: SiteConfig = {
 		annualPostGoal: 50,
 		github: {
 			enabled: true,
-			username: "MmzMing", // 填写 GitHub 用户名后启用
+			username: "cryyds6", // 填写 GitHub 用户名后启用
 		},
 	},
 
