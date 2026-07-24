@@ -52,10 +52,6 @@ const buildNavBarConfig = (): NavBarConfig => {
 	}
 	myChildren.push(LinkPreset.Music);
 	myChildren.push(LinkPreset.About);
-	myChildren.push(LinkPreset.Memorial);
-	myChildren.push(LinkPreset.ImageBed);
-	myChildren.push(LinkPreset.Monitoring);
-	myChildren.push(LinkPreset.SBTI);
 
 	const myNav: NavBarLink = {
 		...LinkPresets[LinkPreset.NavMy],

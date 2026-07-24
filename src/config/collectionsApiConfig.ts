@@ -11,6 +11,39 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 
 	// API 收藏列表（按 category 分组）
 	apis: [
+        {
+            category: "我的网站",
+            items: [
+                {
+                    name: "百年 | 纪念",
+                    url: "https://20210701.xyz",
+                    description: "2021.07.01（域名数字）中国共产党百年纪念",
+                    icon: "https://www.20210701.xyz/icon.jpeg",
+                    enabled: true,
+                },
+                {
+                    name: "图床 | 图片托管",
+                    url: "https://imgbed.20210701.xyz/login",
+                    description: "自建图片托管服务，支持图片等上传与外链分享。",
+                    icon: "https://www.20210701.xyz/icon.jpeg",
+                    enabled: true,
+                },
+                {
+                    name: "监控 | 服务状态",
+                    url: "https://status.20210701.xyz",
+                    description: "服务运行状态监控面板，实时查看网站可用性与响应时间。",
+                    icon: "https://www.20210701.xyz/icon.jpeg",
+                    enabled: true,
+                },
+                {
+                    name: "测试 | SBTI人格测试",
+                    url: "https://sbti-test-3n1.pages.dev/",
+                    description: "在线SBTI性格测试工具，快速分析人格类型。",
+                    icon: "https://www.20210701.xyz/icon.jpeg",
+                    enabled: true,
+                },
+            ],
+        },
 		{
 			category: "工具箱",
 			items: [
