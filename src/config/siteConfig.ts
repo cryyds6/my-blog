@@ -200,7 +200,7 @@ export const siteConfig: SiteConfig = {
 	// 统计分析
 	analytics: {
 		// Google Analytics ID
-		googleAnalyticsId: "",
+		googleAnalyticsId: "G-80N9QRJNGM",
 		// Microsoft Clarity ID
 		microsoftClarityId: "xrdmbvthzc",
 		// Umami 统计配置
