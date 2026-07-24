@@ -16,7 +16,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 			items: [
 				{
 					name: "百年 | 纪念",
-					url: "https://20210701.xyz",
+					url: "https://100.20210701.xyz",
 					description: "2021.07.01（域名数字）中国共产党百年纪念",
 					icon: "https://www.20210701.xyz/icon.jpeg",
 					enabled: true,
@@ -39,6 +39,13 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					name: "测试 | SBTI人格测试",
 					url: "https://sbti-test-3n1.pages.dev/",
 					description: "在线SBTI性格测试工具，快速分析人格类型。",
+					icon: "https://www.20210701.xyz/icon.jpeg",
+					enabled: true,
+				},
+                {
+					name: "Qgxs | 友链导航",
+					url: "https://dh.20210701.xyz/",
+					description: "QGXS博客友链，发现更多优质网站。",
 					icon: "https://www.20210701.xyz/icon.jpeg",
 					enabled: true,
 				},

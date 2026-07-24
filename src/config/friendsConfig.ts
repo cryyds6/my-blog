@@ -61,15 +61,6 @@ export const friendsConfig: FriendLink[] = [
 		enabled: true,
 	},
 	{
-		title: "Qgxs 友链导航页",
-		imgurl: "https://www.20210701.xyz/icon.jpeg",
-		desc: "独立友链页，自主申请",
-		siteurl: "https://dh.20210701.xyz/",
-		tags: ["导航"],
-		weight: 10,
-		enabled: true,
-	},
-	{
 		title: "Hzの小站",
 		imgurl: "https://favicon.im/zh/blog.mikufans520.top?t=1770102380342",
 		desc: "记录碎碎念念，分享个人建站经验、教训及相关技术干货",
