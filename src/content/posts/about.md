@@ -1,6 +1,6 @@
 ---
 title: 关于本站与博客演进
-published: 2025-01-31
+published: 2025-01-29
 description: 一名在校学生的博客成长史——从Typecho到Astro+Fuwari，从光影梦到记录初心，附内容规范与交流方式。
 image: 未设置
 tags: ["关于", "博客", "个人"]
