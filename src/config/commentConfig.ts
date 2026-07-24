@@ -16,7 +16,8 @@ export const commentConfig: CommentConfig = {
 	//waline评论系统配置
 	waline: {
 		// waline 后端服务地址
-		serverURL: "https://api.zcservice.houlang.cloud/comment/67a8feeedb663900046793fc4a086d3d",
+		serverURL:
+			"https://api.zcservice.houlang.cloud/comment/67a8feeedb663900046793fc4a086d3d",
 		// 设置 Waline 评论系统语言
 		lang: "zh-CN",
 		// 设置 Waline 评论系统表情地址

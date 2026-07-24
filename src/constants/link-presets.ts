@@ -105,28 +105,28 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 		url: "/music/",
 		icon: "material-symbols:graphic-eq-rounded",
 	},
-    [LinkPreset.Memorial]: {
-	    name: "纪念",
-	    url: "https://20210701.xyz",
-	    icon: "material-symbols:edit-location",
-	    external: true,
-    },
-    [LinkPreset.ImageBed]: {
-	    name: "图床",
-	    url: "https://imgbed.20210701.xyz/login",
-	    icon: "material-symbols:altitude-outline-rounded",
-	    external: true,
-    },
-    [LinkPreset.Monitoring]: {
-	    name: "监控",
-	    url: "https://status.20210701.xyz",
-	    icon: "material-symbols:monitoring-rounded",
-	    external: true,
-    },
-    [LinkPreset.SBTI]: {
-	    name: "SBTI人格测试",
-	    url: "https://sbti-test-3n1.pages.dev/",
-	    icon: "material-symbols:monitoring-rounded",
-	    external: true,
-    },
+	[LinkPreset.Memorial]: {
+		name: "纪念",
+		url: "https://20210701.xyz",
+		icon: "material-symbols:edit-location",
+		external: true,
+	},
+	[LinkPreset.ImageBed]: {
+		name: "图床",
+		url: "https://imgbed.20210701.xyz/login",
+		icon: "material-symbols:altitude-outline-rounded",
+		external: true,
+	},
+	[LinkPreset.Monitoring]: {
+		name: "监控",
+		url: "https://status.20210701.xyz",
+		icon: "material-symbols:monitoring-rounded",
+		external: true,
+	},
+	[LinkPreset.SBTI]: {
+		name: "SBTI人格测试",
+		url: "https://sbti-test-3n1.pages.dev/",
+		icon: "material-symbols:monitoring-rounded",
+		external: true,
+	},
 };

@@ -195,6 +195,10 @@ export enum LinkPreset {
 	NavPosts = 17,
 	NavMy = 18,
 	Music = 19,
+	Memorial = 20,
+	ImageBed = 21,
+	Monitoring = 22,
+	SBTI = 23,
 }
 
 export type NavBarLink = {
