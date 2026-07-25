@@ -52,8 +52,16 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 			],
 		},
 		{
-			category: "工具箱",
+			category: "推荐",
 			items: [
+				{
+					name: "网络工具 | ITDOG",
+					url: "https://www.itdog.cn/",
+					description:
+						"在线网络工具箱，支持 Ping、TCPing、网站测速、HTTP 测速、路由追踪与 DNS 查询。",
+					icon: favicon("itdog.cn"),
+					enabled: true,
+				},
 				{
 					name: "网络工具 | 中科大测速",
 					url: "https://test.ustc.edu.cn/",
@@ -63,13 +71,38 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					enabled: true,
 				},
 				{
-					name: "网络工具 | ITDOG",
-					url: "https://www.itdog.cn/",
-					description:
-						"在线网络工具箱，支持 Ping、TCPing、网站测速、HTTP 测速、路由追踪与 DNS 查询。",
-					icon: favicon("itdog.cn"),
+					name: "云服务 | Cloudflare",
+					url: "https://www.cloudflare.com/zh",
+					description: "Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。",
+					icon: favicon("cloudflare.com"),
 					enabled: true,
 				},
+				{
+					name: "云服务 | 国际EdgeOne",
+					url: "https://edgeone.ai/zh",
+					description: "亚洲最佳CDN、边缘和安全解决方案",
+					icon: favicon("edgeone.ai"),
+					enabled: true,
+				},
+				{
+					name: "云服务 | 腾讯云",
+					url: "https://cloud.tencent.com/product/teo",
+					description: "全球领先云计算品牌，提供安全可靠的云产品",
+					icon: favicon("cloud.tencent.com"),
+					enabled: true,
+				},
+				{
+					name: "代码库 | ",
+					url: "https://github.com/",
+					description: "GitHub 是全球领先的代码托管与开发者协作平台。",
+					icon: favicon("github.com"),
+					enabled: true,
+				},                
+			],
+		},        
+		{
+			category: "工具箱",
+			items: [
 				{
 					name: "图片处理 | 在线图像工具箱",
 					url: "https://phototool.cn/",
