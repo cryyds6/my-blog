@@ -49,13 +49,13 @@ export const commentConfig: CommentConfig = {
 	//giscus评论系统配置
 	giscus: {
 		// 设置 Giscus 评论系统仓库
-		repo: "MmzMing/my-blog",
+		repo: "M",
 		// 设置 Giscus 评论系统仓库ID
-		repoId: "R_kgDOSXWjBQ",
+		repoId: "R_kgDOSXWj",
 		// 设置 Giscus 评论系统分类
 		category: "General",
 		// 获取 Giscus 评论系统分类ID
-		categoryId: "DIC_kwDOSXWjBc4C8jP5",
+		categoryId: "DIC_kwXWjBc4C8jP5",
 		// 获取 Giscus 评论系统映射方式
 		mapping: "pathname",
 		// 获取 Giscus 评论系统严格模式
