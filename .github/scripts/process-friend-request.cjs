@@ -8,10 +8,10 @@ const FRIENDS_CONFIG_RELATIVE_PATH = 'src/config/friendsConfig.ts';
 
 // 站点信息 - 请根据你的实际站点信息修改
 const SITE_INFO = {
-	name: 'Qgxs',
+	name: 'QgxsのBlog',
 	url: 'https://www.20210701.xyz',
 	avatar: 'https://www.20210701.xyz/icon.jpeg',
-	desc: 'Qgxs的博客',
+	desc: '放松心情，漫游四处，处处美景。',
 };
 
 const DEFAULT_TAG = 'Blog';
