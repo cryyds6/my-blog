@@ -66,7 +66,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "记录碎碎念念，分享个人建站经验、教训及相关技术干货",
 		siteurl: "https://blog.yumeacg.com/",
 		tags: ["博客"],
-		weight: 9,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -76,7 +76,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "二次元小兔导航",
 		siteurl: "https://moe520.com/",
 		tags: ["导航"],
-		weight: 8,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -86,7 +86,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "风灵导航站，大佬导航",
 		siteurl: "https://358520.xyz/",
 		tags: ["导航"],
-		weight: 7,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -95,7 +95,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "猫小诗的个人网站与IDCAMS（IDC联盟管理系统）官方网站",
 		siteurl: "https://mcddos.top",
 		tags: ["博客"],
-		weight: 5,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -105,7 +105,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "小兔互联已运营3年之久，提供稳定，高性价比的服务器、免费主机及免费域名等",
 		siteurl: "https://moebun.com/",
 		tags: ["服务商"],
-		weight: 4,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -115,7 +115,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "明月 frp 提供企业级内网穿透能力",
 		siteurl: "https://frp.cmcure.com",
 		tags: ["服务商"],
-		weight: 3,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -124,7 +124,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "灵烁的个人小窝，记录自己技术增长过程的博客",
 		siteurl: "http://blog.xn--5nx6f.top/",
 		tags: ["博客"],
-		weight: 2,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -134,7 +134,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "凉白导航页(Liangbai Spage)致力于简洁高效无广告的上网导航和搜索入口，沉淀最具价值链接，全站无商业推广，简约而不简单。",
 		siteurl: "https://dh.liangbai.xyz/",
 		tags: ["导航网"],
-		weight: 0,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -143,7 +143,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "专注打造最好的IT学习社区",
 		siteurl: "https://wang-sz.cn/",
 		tags: ["博客"],
-		weight: -1,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -152,7 +152,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "第一剧场-VIP级沉浸看剧",
 		siteurl: "https://www.tvs1.vip/",
 		tags: ["视频网"],
-		weight: -2,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -162,7 +162,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "≡ω≡ 嗯对，一名普通的职一牲~",
 		siteurl: "https://www.worable.top/",
 		tags: ["博客"],
-		weight: -3,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -171,7 +171,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "天上如是，地下亦然",
 		siteurl: "https://www.yhdzz.cn/",
 		tags: ["博客"],
-		weight: -4,
+		weight: 4,
 		enabled: true,
 	},
 	{
@@ -180,7 +180,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "逐光而上！",
 		siteurl: "https://upxuu.com/",
 		tags: ["博客"],
-		weight: -5,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -189,7 +189,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "致力于互联网优质资源共享",
 		siteurl: "https://www.yc520.top/",
 		tags: ["博客", "资源网"],
-		weight: -6,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -198,7 +198,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "Gone_Love 的个人博客",
 		siteurl: "https://blog.gonelove.de/",
 		tags: ["博客"],
-		weight: -7,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -207,7 +207,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "今天我也要学习吗",
 		siteurl: "https://www.xinghuisama.top/",
 		tags: ["博客"],
-		weight: -6,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -216,7 +216,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "梁栋烨的博客网站。",
 		siteurl: "https://090909.top/",
 		tags: ["博客"],
-		weight: -6,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -225,7 +225,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "Where All Miracle Begins.",
 		siteurl: "https://maxlhy0424.is-a.dev/",
 		tags: ["博客"],
-		weight: -7,
+		weight: 6,
 		enabled: true,
 	},
 	{
@@ -234,9 +234,19 @@ export const friendsConfig: FriendLink[] = [
 		desc: "风中的思绪，梦里的足迹",
 		siteurl: "https://blog.windstart.top/",
 		tags: ["博客"],
-		weight: -6,
+		weight: 6,
 		enabled: true,
 	},
+	{
+		title: "十三",
+		imgurl: "https://blog.nw177.cn/assets/avatar.webp",
+		desc: "欲买桂花同载酒，终不似，少年游。",
+		siteurl: "https://blog.nw177.cn",
+		tags: ["博客"],
+		weight: 6,
+		enabled: true,
+	},    
+    
 ];
 
 // 获取启用的友链并进行排序
