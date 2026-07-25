@@ -23,7 +23,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 				},
 				{
 					name: "图床 | 图片托管",
-					url: "https://imgbed.20210701.xyz/login",
+					url: "https://img.20210701.xyz/login",
 					description: "自建图片托管服务，支持图片等上传与外链分享。",
 					icon: "https://www.20210701.xyz/icon.jpeg",
 					enabled: true,
