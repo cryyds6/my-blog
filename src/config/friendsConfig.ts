@@ -52,15 +52,6 @@ export const friendsPageConfig: FriendsPageConfig = {
 // 友链配置
 export const friendsConfig: FriendLink[] = [
 	{
-		title: "Firefly Docs",
-		imgurl: "https://docs-firefly.cuteleaf.cn/logo.png",
-		desc: "Firefly主题模板文档",
-		siteurl: "https://docs-firefly.cuteleaf.cn",
-		tags: ["Docs"],
-		weight: 11,
-		enabled: true,
-	},
-	{
 		title: "Hzの小站",
 		imgurl: "https://favicon.im/zh/blog.mikufans520.top?t=1770102380342",
 		desc: "记录碎碎念念，分享个人建站经验、教训及相关技术干货",
