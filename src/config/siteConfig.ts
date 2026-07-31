@@ -7,27 +7,27 @@ const SITE_LANG = "zh_CN";
 
 export const siteConfig: SiteConfig = {
 	// 站点标题
-	title: "Qgxs的博客",
+	title: "Odd.G | 奇怪先生",
 
 	// 站点副标题
-	subtitle: "Qgxs",
+	subtitle: "Odd.G",
 
 	// 站点 URL
 	site_url: "https://www.20210701.xyz",
 
 	// 站点描述
-	description: "Qgxs的博客，记录个人学习、工作、AI相关的内容",
+	description: "Odd Gentleman（奇怪先生）的个人博客，记录思考、技术与生活碎片。",
 
 	// 站点关键词
 	keywords: [
-		"Qgxs",
-		"JAVA",
+		"Odd.G",
+		"奇怪先生",
 		"AI",
 		"Astro",
 		"ACGN",
 		"博客",
 		"技术博客",
-		"静态博客",
+		"Qgxs博客",
 	],
 
 	// 主题色

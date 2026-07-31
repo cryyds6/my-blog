@@ -43,9 +43,9 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					enabled: true,
 				},
 				{
-					name: "Qgxs | 友链导航",
+					name: "Odd.G | 友链导航",
 					url: "https://dh.20210701.xyz/",
-					description: "QGXS博客友链，发现更多优质网站。",
+					description: "Odd.G博客友链，发现更多优质网站。",
 					icon: "https://www.20210701.xyz/icon.jpeg",
 					enabled: true,
 				},
