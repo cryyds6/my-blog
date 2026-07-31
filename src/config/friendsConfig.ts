@@ -22,7 +22,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 	// 本站信息，用于友链申请指南弹窗中的站点信息展示
 	siteInfo: {
 		name: "Odd.G | 奇怪先生",
-		desc: "Odd Gentleman（奇怪先生）的个人博客，记录思考、技术与生活碎片。",
+		desc: "Odd Gentleman的个人博客，记录思考、技术与生活碎片。",
 		url: "https://www.20210701.xyz",
 		avatar: "https://www.20210701.xyz/icon.jpeg",
 		email: "crqgxs@qq.com",

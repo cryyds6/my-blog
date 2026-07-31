@@ -111,7 +111,7 @@ export const siteConfig: SiteConfig = {
 			alt: "logo",
 		},
 		// 导航栏标题
-		title: "Qgxs的博客",
+		title: "Odd.G | 奇怪先生",
 		// 全宽导航栏，导航栏是否占满屏幕宽度
 		widthFull: false,
 	},
