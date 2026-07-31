@@ -15,10 +15,10 @@ export const homeConfig: HomeConfig = {
 	avatarOffWork: "assets/images/avatar-work-off.webp",
 
 	// 名字
-	name: "QGXS",
+	name: "Odd.G",
 
 	// 首页展示名字（留空则使用 name）
-	displayName: "QGXS",
+	displayName: "Odd.G",
 
 	// 名字右侧徽章文字（如 QQ 号）
 	nameBadge: "哈基墩",
