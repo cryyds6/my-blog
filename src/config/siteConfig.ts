@@ -16,7 +16,8 @@ export const siteConfig: SiteConfig = {
 	site_url: "https://www.20210701.xyz",
 
 	// 站点描述
-	description: "Odd Gentleman（奇怪先生）的个人博客，记录思考、技术与生活碎片。",
+	description:
+		"Odd Gentleman（奇怪先生）的个人博客，记录思考、技术与生活碎片。",
 
 	// 站点关键词
 	keywords: [
