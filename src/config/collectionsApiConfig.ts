@@ -73,7 +73,8 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 				{
 					name: "云服务 | Cloudflare",
 					url: "https://www.cloudflare.com/zh",
-					description: "Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。",
+					description:
+						"Cloudflare以向客户提供网站安全管理、性能优化及相关的技术支持为主要业务。",
 					icon: favicon("cloudflare.com"),
 					enabled: true,
 				},
@@ -97,9 +98,9 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					description: "GitHub 是全球领先的代码托管与开发者协作平台。",
 					icon: favicon("github.com"),
 					enabled: true,
-				},                
+				},
 			],
-		},        
+		},
 		{
 			category: "工具箱",
 			items: [
