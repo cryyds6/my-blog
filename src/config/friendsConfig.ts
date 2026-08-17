@@ -100,16 +100,6 @@ export const friendsConfig: FriendLink[] = [
 		enabled: true,
 	},
 	{
-		title: "明月 frp",
-		imgurl:
-			"https://358520.xyz/uploads/icons/697f73f90b7a5_FA682E5C0F9999014E85C2340A8B3475.jpg",
-		desc: "明月 frp 提供企业级内网穿透能力",
-		siteurl: "https://frp.cmcure.com",
-		tags: ["服务商"],
-		weight: 6,
-		enabled: true,
-	},
-	{
 		title: "灵烁的个人博客",
 		imgurl: "http://blog.xn--5nx6f.top/wp-content/uploads/2026/02/吃瓜.jpg",
 		desc: "灵烁的个人小窝，记录自己技术增长过程的博客",
