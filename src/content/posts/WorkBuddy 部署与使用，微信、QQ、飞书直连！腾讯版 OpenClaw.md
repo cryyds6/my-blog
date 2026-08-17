@@ -2,7 +2,7 @@
 title: WorkBuddy 部署与使用，微信、QQ、飞书直连！腾讯版 OpenClaw
 published: 2026-03-18
 description: 详解腾讯 WorkBuddy 桌面智能体工作台的下载安装、登录流程，及微信、QQ、飞书等主流 IM 平台的集成方法。
-image: https://imgbed.20210701.xyz/file/博客/1773801190918_640_edit_108448131832377.webp
+image: https://imgbed.3181314.xyz/file/博客/1773801190918_640_edit_108448131832377.webp
 tags: ["WorkBuddy", "腾讯智能体", "IM集成", "部署教程"]
 category: 部署教程
 draft: false
@@ -12,7 +12,7 @@ draft: false
 ## 基本介绍
 WorkBuddy 是腾讯推出的一款类 OpenClaw 的桌面智能体工作台，支持在手机主流 IM 平台下发指令，兼容 Windows、Mac 系统，可接入微信、企业微信、QQ、钉钉、飞书等应用。
 
-![WorkBuddy 产品示意图](https://imgbed.20210701.xyz/file/博客/1773801190918_640_edit_108448131832377.webp)
+![WorkBuddy 产品示意图](https://imgbed.3181314.xyz/file/博客/1773801190918_640_edit_108448131832377.webp)
 
 ## 一、WorkBuddy 下载安装
 ### 1.1 下载安装包
@@ -24,9 +24,9 @@ WorkBuddy 是腾讯推出的一款类 OpenClaw 的桌面智能体工作台，支
 ## 二、WorkBuddy 登录
 打开 WorkBuddy 应用，点击「登录」按钮，按提示完成账号登录操作。
 
-![WorkBuddy 登录界面1](https://imgbed.20210701.xyz/file/博客/1773801278437_com.tencent.mm_20260318102920.webp)
+![WorkBuddy 登录界面1](https://imgbed.3181314.xyz/file/博客/1773801278437_com.tencent.mm_20260318102920.webp)
 
-![WorkBuddy 登录界面2](https://imgbed.20210701.xyz/file/博客/1773801310153_com.tencent.mm_20260318102906.webp)
+![WorkBuddy 登录界面2](https://imgbed.3181314.xyz/file/博客/1773801310153_com.tencent.mm_20260318102906.webp)
 
 ## 三、主流 IM 平台集成指南
 | 集成平台 | 详细指南链接 |

@@ -2,7 +2,7 @@
 title: 使用Docker部署哪吒监控v1 CloudFlare Tunnel版面板端
 published: 2026-03-03
 description: 详细介绍如何通过Docker部署哪吒监控v1的CloudFlare Tunnel版面板端，实现无公网IP的服务器监控运维，包含准备工作、部署步骤及相关配置。
-image: https://imgbed.20210701.xyz/file/博客/1772525183371_mark.via_20260303160610.webp
+image: https://imgbed.3181314.xyz/file/博客/1772525183371_mark.via_20260303160610.webp
 tags: ["服务器监控", "Docker部署", "CloudFlare", "哪吒监控"]
 category: 部署教程
 draft: false
@@ -11,7 +11,7 @@ draft: false
 ## 哪吒面板简介
 哪吒监控是一款自托管、轻量级的服务器和网站监控运维工具。支持监控系统状态、HTTP（SSL 证书更改、即将过期、过期）、TCP、Ping，并支持推送警报、运行计划任务和 Web 终端。
 
-![哪吒监控官网截图](https://imgbed.20210701.xyz/file/博客/1772523329936_https_nezha.wiki_index.html_哪吒监控_-_服务器监控与运维工具___22495_edit_225923870811210.webp)
+![哪吒监控官网截图](https://imgbed.3181314.xyz/file/博客/1772523329936_https_nezha.wiki_index.html_哪吒监控_-_服务器监控与运维工具___22495_edit_225923870811210.webp)
 
 **官方网站**：[https://nezha.wiki](https://nezha.wiki)
 **官方Github**：[https://github.com/nezhahq/nezha](https://github.com/nezhahq/nezha)
@@ -29,7 +29,7 @@ draft: false
 **注意**：教程并没有Docker 安装步骤
 
 ## 界面演示
-![哪吒监控界面演示](https://imgbed.20210701.xyz/file/博客/1772523474329_mark.via_20260303153735.webp)
+![哪吒监控界面演示](https://imgbed.3181314.xyz/file/博客/1772523474329_mark.via_20260303153735.webp)
 
 ## 部署哪吒监控
 ### 1.1 创建Tunnel并保存CloudFlare Tunnel Token
@@ -40,11 +40,11 @@ draft: false
 
 ### 1.3 提取CloudFlare Tunnel Token
 任意环境下复制命令，ey开头的省略字符串就是CloudFlare Tunnel Token，复制命令后自行提取即可。
-![提取CloudFlare Tunnel Token](https://imgbed.20210701.xyz/file/博客/1772523610008_Screenshot_20260303_153953_com_hihonor_hnmagicportal_MagicPortalServiceActivity.webp)
+![提取CloudFlare Tunnel Token](https://imgbed.3181314.xyz/file/博客/1772523610008_Screenshot_20260303_153953_com_hihonor_hnmagicportal_MagicPortalServiceActivity.webp)
 
 ### 1.4 开启CloudFlare域名GRPC流量代理
 进入Cloudflare，打开已接入的域名页面，点击网络，拉到最下方，将gPRC启用即可。
-![开启GRPC流量代理](https://imgbed.20210701.xyz/file/博客/1772523729634_40fbc15e815677d1f36c2ccff4f857a5_edit_226357700589326.webp)
+![开启GRPC流量代理](https://imgbed.3181314.xyz/file/博客/1772523729634_40fbc15e815677d1f36c2ccff4f857a5_edit_226357700589326.webp)
 
 ### 2.1 拉取项目并修改配置文件
 ```bash
@@ -62,7 +62,7 @@ docker compose up -d
 
 ### 2.4 添加应用程序路由
 点击已发布应用程序路由，点击添加已发布应用程序路由，添加一个自定义域名（主机名称），指向`http://nginx:80`后保存即可。
-![添加应用程序路由](https://imgbed.20210701.xyz/file/博客/1772523847783_6711ab7472f30db7085befe7f780bb61_edit_226462923103557.webp)
+![添加应用程序路由](https://imgbed.3181314.xyz/file/博客/1772523847783_6711ab7472f30db7085befe7f780bb61_edit_226462923103557.webp)
 
 此时访问在CF穿透的域名，即可正常使用哪吒监控面板！
 

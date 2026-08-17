@@ -13,7 +13,7 @@ AI写的
 可以托管Cloudflare 
 
 当做小页面放在博客里面，挺不错的
-我的演示页面[dh.20210701.xyz](https:/dh.20210701.xyz/)
+我的演示页面[dh.3181314.xyz](https:/dh.3181314.xyz/)
 
 ```
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ AI写的
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://events.vercount.one" crossorigin>
-    <link rel="preconnect" href="https://www.20210701.xyz" crossorigin>
+    <link rel="preconnect" href="https://www.3181314.xyz" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text=Hello%20Qgxs" rel="stylesheet" media="print" onload="this.media='all'">
     <noscript>
         <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@ AI写的
     <main>
         <div class="avatar-container">
             <div class="avatar glow">
-                <img src="https://www.20210701.xyz/icon.jpeg" alt="Avatar" loading="lazy" decoding="async">
+                <img src="https://www.3181314.xyz/icon.jpeg" alt="Avatar" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -66,17 +66,17 @@ AI写的
         </div>
 
         <div class="button-group">
-            <a href="https://www.20210701.xyz/" class="btn glow" aria-label="访问我的博客">
+            <a href="https://www.3181314.xyz/" class="btn glow" aria-label="访问我的博客">
                 <span role="img" aria-label="博客">📚</span>
                 <span>博客</span>
             </a>
-            <a href="https://20210701.xyz/" class="btn glow" aria-label="访问100周年网站">
+            <a href="https://3181314.xyz/" class="btn glow" aria-label="访问100周年网站">
                 <span role="img" aria-label="100周年">🇨🇳</span>
                 <span>100周年</span>
             </a>
         </div>
 
-        <a href="https://www.20210701.xyz/about.html" class="btn btn-primary glow" aria-label="了解关于我">
+        <a href="https://www.3181314.xyz/about.html" class="btn btn-primary glow" aria-label="了解关于我">
             关于我
         </a>
     </main>

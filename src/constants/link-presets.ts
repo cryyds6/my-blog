@@ -107,19 +107,19 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 	},
 	[LinkPreset.Memorial]: {
 		name: "纪念",
-		url: "https://20210701.xyz",
+		url: "https://3181314.xyz",
 		icon: "material-symbols:edit-location",
 		external: true,
 	},
 	[LinkPreset.ImageBed]: {
 		name: "图床",
-		url: "https://imgbed.20210701.xyz/login",
+		url: "https://imgbed.3181314.xyz/login",
 		icon: "material-symbols:altitude-outline-rounded",
 		external: true,
 	},
 	[LinkPreset.Monitoring]: {
 		name: "监控",
-		url: "https://status.20210701.xyz",
+		url: "https://status.3181314.xyz",
 		icon: "material-symbols:monitoring-rounded",
 		external: true,
 	},

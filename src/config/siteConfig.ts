@@ -13,7 +13,7 @@ export const siteConfig: SiteConfig = {
 	subtitle: "Odd.G",
 
 	// 站点 URL
-	site_url: "https://www.20210701.xyz",
+	site_url: "https://www.3181314.xyz",
 
 	// 站点描述
 	description:
