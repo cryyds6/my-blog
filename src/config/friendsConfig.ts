@@ -31,9 +31,13 @@ export const friendsPageConfig: FriendsPageConfig = {
 	// 注意事项，用于友链申请指南弹窗中的注意事项展示
 	notes: [
 		{
+			title: "申请方式",
+			content: "可将信息发送至邮箱 1044192982@qq.com ，或者点击下方自助申请友链按钮。",
+		},
+		{
 			title: "互换原则",
 			content: "请先将本站添加到您的友链页面，确认后会添加您的友链",
-		},
+		},        
 		{
 			title: "链接维护",
 			content: "友链网站长期无法访问或内容违规，将会被移除",
