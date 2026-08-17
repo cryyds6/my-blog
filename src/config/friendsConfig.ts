@@ -23,8 +23,8 @@ export const friendsPageConfig: FriendsPageConfig = {
 	siteInfo: {
 		name: "Odd.G | 奇怪先生",
 		desc: "Odd Gentleman的个人博客，记录思考、技术与生活碎片。",
-		url: "https://www.20210701.xyz",
-		avatar: "https://www.20210701.xyz/icon.jpeg",
+		url: "https://www.3181314.xyz",
+		avatar: "https://www.3181314.xyz/icon.jpeg",
 		email: "crqgxs@qq.com",
 	},
 
