@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /search/
+Sitemap: https://www.3181314.xyz/sitemap-0.xml
+RSS: https://www.3181314.xyz/rss.xml
