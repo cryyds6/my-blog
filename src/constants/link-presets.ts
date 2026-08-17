@@ -113,7 +113,7 @@ export const LinkPresets: { [key in LinkPreset]: NavBarLink } = {
 	},
 	[LinkPreset.ImageBed]: {
 		name: "图床",
-		url: "https://imgbed.3181314.xyz/login",
+		url: "https://img.3181314.xyz/login",
 		icon: "material-symbols:altitude-outline-rounded",
 		external: true,
 	},

@@ -2,7 +2,7 @@
 title: BinNav-静态导航有后台，免费部署EdgeOne Pages和Cloudflare Pages
 published: 2026-02-19
 description: 一个现代化的网站导航页面，支持可视化管理后台、智能图标获取、拖拽排序和自动部署更新，可部署至EdgeOne Pages无需服务器
-image: https://imgbed.3181314.xyz/file/博客/1771513899287_image.png
+image: https://img.3181314.xyz/file/博客/1771513899287_image.png
 tags: ["导航页", "EdgeOne", "部署", "静态应用"]
 category: 部署教程
 draft: false
@@ -21,7 +21,7 @@ draft: false
 ![后台预览](https://raw.githubusercontent.com/sindricn/BinNav_Public/main/public/img/admin.png)
 
 修改后的样式：
-![修改后预览](https://imgbed.3181314.xyz/file/博客/1771513899287_image.png)
+![修改后预览](https://img.3181314.xyz/file/博客/1771513899287_image.png)
 
 基于个人自用修改，仅供学习参考！
 

@@ -2,7 +2,7 @@
 title: 免费图床 CloudFlare ImgBed 部署教程
 published: 2026-02-12
 description: 本文详细介绍基于 Cloudflare Pages 的开源文件托管工具 CloudFlare ImgBed 的部署、数据库配置、存储渠道与完整使用流程。
-image: https://imgbed.3181314.xyz/file/博客/1770908588826_image.png
+image: https://img.3181314.xyz/file/博客/1770908588826_image.png
 tags: ["Cloudflare", "图床", "部署教程", "技术"]
 category: 部署教程
 draft: false
@@ -35,8 +35,8 @@ CloudFlare ImgBed 是一个基于 Cloudflare Pages 的开源文件托管解决�
 - 全链路功能：具备鉴权、目录管理、图片审查、随机图等特色功能，满足多样化使用需求
   
 ## 效果展示
-![图片效果展示1](https://imgbed.3181314.xyz/file/博客/1770906775793_image.png)
-![图片效果展示2](https://imgbed.3181314.xyz/file/博客/1770908588826_image.png)
+![图片效果展示1](https://img.3181314.xyz/file/博客/1770906775793_image.png)
+![图片效果展示2](https://img.3181314.xyz/file/博客/1770908588826_image.png)
 
 ## Cloudflare Pages 部署
 Cloudflare Pages 是推荐的部署方式，提供免费托管、全球 CDN 加速和无需服务器维护的优势。
@@ -55,7 +55,7 @@ Cloudflare Pages 是推荐的部署方式，提供免费托管、全球 CDN 加�
 4. 在最下方 Looking to deploy Pages? 选择「Get started」
 5. 在「导入现有 Git 存储库」处点击「开始使用」
 
-![Cloudflare Pages 创建界面](https://imgbed.3181314.xyz/file/博客/1770907179119_image.png)
+![Cloudflare Pages 创建界面](https://img.3181314.xyz/file/博客/1770907179119_image.png)
 
 #### 2.2 连接 GitHub 仓库
 1. 如果首次使用，需要授权 Cloudflare 访问 GitHub

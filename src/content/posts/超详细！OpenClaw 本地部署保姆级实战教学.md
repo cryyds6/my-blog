@@ -2,14 +2,14 @@
 title: 超详细！OpenClaw 本地部署保姆级实战教学
 published: 2026-03-18
 description: 本文详细讲解 OpenClaw AI 助手框架在 Windows、macOS、Linux 下的本地部署、配置、常用命令与故障排除方法。
-image: https://imgbed.3181314.xyz/file/博客/1773801117558_2a15dd88234a2dfe31c08fc2fcabb83a.webp
+image: https://img.3181314.xyz/file/博客/1773801117558_2a15dd88234a2dfe31c08fc2fcabb83a.webp
 tags: ["OpenClaw", "AI助手", "本地部署", "教程"]
 category: 部署教程
 draft: false
 ---
 # 超详细！OpenClaw 本地部署保姆级实战教学
 
-![OpenClaw 部署教程封面](https://imgbed.3181314.xyz/file/博客/1773801117558_2a15dd88234a2dfe31c08fc2fcabb83a.webp)
+![OpenClaw 部署教程封面](https://img.3181314.xyz/file/博客/1773801117558_2a15dd88234a2dfe31c08fc2fcabb83a.webp)
 
 ## 1. 简介
 ### 什么是 OpenClaw？
