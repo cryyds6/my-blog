@@ -35,9 +35,9 @@ jobs:
         uses: anthropics/claude-code-action@v1
         env:
           # ANTHROPIC_BASE_URL: https://api.moonshot.cn/anthropic
-          ANTHROPIC_BASE_URL: https://token-plan-cn.xiaomimimo.com/anthropic
+          ANTHROPIC_BASE_URL: http://149.88.66.82:3001/v1/chat/completions
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           claude_args: |
-            --model mimo-v2.5
+            --model auto
             --allowedTools "mcp__github_inline_comment__create_inline_comment,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh issue:*),Bash(gh search:*),Bash(gh label:*)"
