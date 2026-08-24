@@ -32,13 +32,27 @@ jobs:
           cat > cron-check.cjs << 'EOF'
           const { chromium } = require('playwright');
           const fs = require('fs');
+          const dns = require('dns').promises;
 
           async function checkFriend(page, url, retries = 3) {
             let lastError = null;
 
+            // 修复1：先做DNS预检查，解析失败直接返回，防止无限卡死
+            try {
+              const hostname = new URL(url).hostname;
+              await dns.lookup(hostname);
+            } catch (e) {
+              return { ok: false, error: `DNS解析失败 (${e.code || e.message})`, url: url };
+            }
+
             for (let i = 0; i < retries; i++) {
               try {
-                const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 12000 });
+                // 修复2：使用 Promise.race 强制设置 15 秒超时兜底，防止底层 socket 挂起
+                const response = await Promise.race([
+                  page.goto(url, { waitUntil: 'domcontentloaded', timeout: 12000 }),
+                  new Promise((_, reject) => setTimeout(() => reject(new Error('超时强制中断')), 15000))
+                ]);
+                
                 const statusCode = response ? response.status() : null;
                 if (response && response.ok()) {
                   return { ok: true, status: statusCode, url: page.url() };
@@ -138,7 +152,13 @@ jobs:
             console.log(`总计: ${total} | 正常: ${ok} | 不可达: ${fail}`);
           }
 
-          main();
+          // 修复3：强制退出 Node 进程，防止底层挂起导致 GitHub Actions 6小时超时
+          main()
+            .then(() => process.exit(0))
+            .catch(err => {
+              console.error('巡检脚本执行发生致命错误:', err);
+              process.exit(1);
+            });
           EOF
 
       - name: 执行巡检
@@ -146,6 +166,7 @@ jobs:
         env:
           NODE_PATH: /tmp/playwright-setup/node_modules
         run: node cron-check.cjs
+        timeout-minutes: 10 # 修复4：加上步骤级硬性超时保护，出现问题最多只跑10分钟
 
       - name: 处理异常并通知
         uses: actions/github-script@v7
