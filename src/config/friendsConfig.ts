@@ -32,12 +32,13 @@ export const friendsPageConfig: FriendsPageConfig = {
 	notes: [
 		{
 			title: "申请方式",
-			content: "可将信息发送至邮箱 1044192982@qq.com ，或者点击下方自助申请友链按钮。",
+			content:
+				"可将信息发送至邮箱 1044192982@qq.com ，或者点击下方自助申请友链按钮。",
 		},
 		{
 			title: "互换原则",
 			content: "请先将本站添加到您的友链页面，确认后会添加您的友链",
-		},        
+		},
 		{
 			title: "链接维护",
 			content: "友链网站长期无法访问或内容违规，将会被移除",
@@ -61,7 +62,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "记录碎碎念念，分享个人建站经验、教训及相关技术干货",
 		siteurl: "https://blog.yumeacg.com/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -71,7 +72,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "二次元小兔导航",
 		siteurl: "https://moe520.com/",
 		tags: ["导航"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -81,7 +82,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "风灵导航站，大佬导航",
 		siteurl: "https://358520.xyz/",
 		tags: ["导航"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -90,7 +91,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "猫小诗的个人网站与IDCAMS（IDC联盟管理系统）官方网站",
 		siteurl: "https://mcddos.top",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -100,7 +101,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "小兔互联已运营3年之久，提供稳定，高性价比的服务器、免费主机及免费域名等",
 		siteurl: "https://moebun.com/",
 		tags: ["服务商"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -119,7 +120,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "凉白导航页(Liangbai Spage)致力于简洁高效无广告的上网导航和搜索入口，沉淀最具价值链接，全站无商业推广，简约而不简单。",
 		siteurl: "https://dh.liangbai.xyz/",
 		tags: ["导航网"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -128,7 +129,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "专注打造最好的IT学习社区",
 		siteurl: "https://wang-sz.cn/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -141,7 +142,7 @@ export const friendsConfig: FriendLink[] = [
 		enabled: true,
 	},
 	{
-		title: "worable's Blog",
+		title: "worable",
 		imgurl:
 			"https://www.worable.top/wp-content/uploads/2026/02/2026020109015019.jpg",
 		desc: "≡ω≡ 嗯对，一名普通的职一牲~",
@@ -156,11 +157,11 @@ export const friendsConfig: FriendLink[] = [
 		desc: "天上如是，地下亦然",
 		siteurl: "https://www.yhdzz.cn/",
 		tags: ["博客"],
-		weight: 4,
+		weight: 5,
 		enabled: true,
 	},
 	{
-		title: "UpXuu's blog",
+		title: "UpXuu",
 		imgurl: "https://upxuu.com/images/20260214145619.jpg",
 		desc: "逐光而上！",
 		siteurl: "https://upxuu.com/",
@@ -174,7 +175,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "致力于互联网优质资源共享",
 		siteurl: "https://www.yc520.top/",
 		tags: ["博客", "资源网"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -183,7 +184,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "Gone_Love 的个人博客",
 		siteurl: "https://blog.gonelove.de/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -192,7 +193,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "今天我也要学习吗",
 		siteurl: "https://www.xinghuisama.top/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -201,16 +202,16 @@ export const friendsConfig: FriendLink[] = [
 		desc: "梁栋烨的博客网站。",
 		siteurl: "https://090909.top/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
-		title: "MaxLHy's Blog",
+		title: "MaxLHy",
 		imgurl: "https://maxlhy0424.is-a.dev/images/favicon.webp",
 		desc: "Where All Miracle Begins.",
 		siteurl: "https://maxlhy0424.is-a.dev/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -219,7 +220,7 @@ export const friendsConfig: FriendLink[] = [
 		desc: "风中的思绪，梦里的足迹",
 		siteurl: "https://blog.windstart.top/",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
 		enabled: true,
 	},
 	{
@@ -228,7 +229,16 @@ export const friendsConfig: FriendLink[] = [
 		desc: "欲买桂花同载酒，终不似，少年游。",
 		siteurl: "https://blog.nw177.cn",
 		tags: ["博客"],
-		weight: 6,
+		weight: 5,
+		enabled: true,
+	},
+	{
+		title: "池泛の小窝",
+		imgurl: "https://chortle.asia/uploads/image/avater_1786082652615.jpg",
+		desc: "山水有相逢，来日皆可期",
+		siteurl: "https://chortle.asia/",
+		tags: ["Blog"],
+		weight: 5,
 		enabled: true,
 	},
 ];
