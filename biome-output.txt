@@ -1,0 +1,6 @@
+::error title=format,file=src/config/commentConfig.ts,line=1,endLine=1,col=2,endColumn=2::File content differs from formatting output
+ci ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  × Some errors were emitted while running checks.
+  
+
