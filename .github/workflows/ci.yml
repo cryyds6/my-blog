@@ -11,7 +11,7 @@ concurrency:
   cancel-in-progress: true
 
 permissions:
-  contents: read
+  contents: write  # 需要写入权限以推送自动修复
 
 jobs:
   check:
@@ -43,9 +43,71 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Setup Biome
         uses: biomejs/setup-biome@f382a98e582959e6aaac8e5f8b17b31749018780 # v2.5.0
         with:
           version: latest
-      - name: Run Biome
-        run: biome ci ./src --reporter=github
+
+      # 步骤 1：先检查，如果有问题则继续，没问题则跳过后续步骤
+      - name: Check with Biome
+        id: biome_check
+        continue-on-error: true
+        run: |
+          biome ci ./src --reporter=github 2>&1 | tee biome-output.txt
+          EXIT_CODE=${PIPESTATUS[0]}
+          echo "exit_code=$EXIT_CODE" >> "$GITHUB_OUTPUT"
+          if [ $EXIT_CODE -ne 0 ]; then
+            echo "Biome check failed. Will attempt auto-fix."
+            exit 1
+          fi
+          echo "Biome check passed. No fixes needed."
+          exit 0
+
+      # 步骤 2：仅在检查失败时执行自动修复
+      - name: Auto-fix with Biome
+        if: steps.biome_check.outcome == 'failure'
+        run: |
+          echo "Running Biome auto-fix..."
+          biome check --write ./src
+
+      # 步骤 3：修复后再次检查，确保所有问题都已解决
+      - name: Re-check with Biome
+        if: steps.biome_check.outcome == 'failure'
+        run: |
+          echo "Re-checking after auto-fix..."
+          biome ci ./src --reporter=github
+
+      # 步骤 4：只有修复成功（再次检查通过）且有改动时才推送
+      - name: Commit and push auto-fixes
+        if: steps.biome_check.outcome == 'failure' && success()
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit. (Biome reported issues but --write made no changes.)"
+            exit 1
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: apply Biome auto-fixes"
+
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            # 只对同仓库 PR 推送，fork PR 跳过
+            if [ "${{ github.event.pull_request.head.repo.full_name }}" = "${{ github.repository }}" ]; then
+              git push origin HEAD:refs/heads/${{ github.head_ref }}
+            else
+              echo "Skipping push for fork PR."
+              exit 0
+            fi
+          else
+            git push origin HEAD:refs/heads/${{ github.ref_name }}
+          fi
+
+      # 如果首次检查通过，输出提示
+      - name: All good
+        if: steps.biome_check.outcome == 'success'
+        run: echo "✅ Biome check passed. No auto-fix needed."
