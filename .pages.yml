@@ -233,7 +233,7 @@ content:
       - name: profile-config
         label: 👤 个人信息
         type: file
-        path: src/config/profileConfig.ts
+        path: src/config/homeConfig.ts
         format: code
         description: 头像、昵称、签名、社交链接等个人资料配置
 
@@ -280,13 +280,6 @@ content:
         format: code
         description: 页脚开关控制
 
-      - name: footer-html
-        label: 📏 页脚 HTML
-        type: file
-        path: src/config/FooterConfig.html
-        format: code
-        description: 页脚自定义 HTML 内容（备案号、版权信息等）
-
       - name: font-config
         label: 🔤 字体设置
         type: file
@@ -300,13 +293,6 @@ content:
         path: src/config/coverImageConfig.ts
         format: code
         description: 文章详情页封面图显示和随机图 API 配置
-
-      - name: background-wallpaper
-        label: 🏞️ 背景壁纸
-        type: file
-        path: src/config/backgroundWallpaper.ts
-        format: code
-        description: 全屏壁纸、横幅壁纸、视频背景、水波纹、渐变等背景特效
 
       - name: expressive-code-config
         label: 💻 代码块样式
@@ -329,13 +315,6 @@ content:
         path: src/config/commentConfig.ts
         format: code
         description: Twikoo / Waline / Giscus / Artalk / Disqus 评论系统配置
-
-      - name: analytics-config
-        label: 📊 数据统计
-        type: file
-        path: src/config/analyticsConfig.ts
-        format: code
-        description: Google Analytics、Microsoft Clarity、Umami、51la 统计配置
 
       - name: music-config
         label: 🎵 音乐播放器
