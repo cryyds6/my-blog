@@ -209,6 +209,7 @@ export const siteConfig: SiteConfig = {
 			websiteId: "2170479d-b6c2-4b4b-adda-794f1c42a607",
 			shareId: "WZogKIY0xxKQYiKm",
 			scriptUrl: "https://cloud.umami.is/script.js",
+			statsApiUrl: "https://cloud.umami.is/analytics/us",
 			// 是否追踪出站链接
 			trackOutboundLinks: true,
 			// 是否收集浏览器性能指标

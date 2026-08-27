@@ -107,6 +107,7 @@ export type SiteConfig = {
 			websiteId?: string; // Umami Website ID
 			shareId?: string; // Umami 分享页 ID，用于客户端直接获取统计
 			scriptUrl?: string; // Umami JS地址，支持使用自建
+			statsApiUrl?: string; // 统计 API 基础地址；默认取 scriptUrl 的 origin，部署在子路径时需显式指定（如 https://cloud.umami.is/analytics/us）
 			trackOutboundLinks?: boolean; // 是否追踪出站链接点击事件，默认 true
 			collectWebVitals?: boolean; // 是否自动收集访客浏览器核心网页指标，默认 false
 			relpays?: {

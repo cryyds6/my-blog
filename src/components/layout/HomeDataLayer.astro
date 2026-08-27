@@ -48,9 +48,11 @@ const primaryContactItems = contactItems.filter((link) =>
 	primaryContactNames.has(link.name.toLowerCase()),
 );
 const umamiConfig = siteConfig.analytics?.umamiAnalytics;
-const statsBaseUrl = umamiConfig?.scriptUrl
-	? new URL(umamiConfig.scriptUrl).origin
-	: "";
+const statsBaseUrl = umamiConfig?.statsApiUrl
+	? umamiConfig.statsApiUrl.replace(/\/+$/, "")
+	: umamiConfig?.scriptUrl
+		? new URL(umamiConfig.scriptUrl).origin
+		: "";
 const statsShareId = umamiConfig?.shareId ?? "";
 ---
 
