@@ -372,7 +372,8 @@ const statsShareId = umamiConfig?.shareId ?? "";
 				node.dataset.fullValue = Number(value).toLocaleString();
 				node.textContent = node.dataset.compactValue;
 			});
-		}).catch(() => {
+		}).catch((error) => {
+			console.warn("[visit-stats] 加载站点访问统计失败:", error);
 			if (detail) detail.textContent = "访客 -- / 浏览 --";
 		});
 	}
