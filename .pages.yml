@@ -358,13 +358,6 @@ content:
         format: code
         description: 友链列表（站点名、头像、描述、链接、标签、权重）
 
-      - name: effects-config
-        label: 🌸 樱花特效
-        type: file
-        path: src/config/effectsConfig.ts
-        format: code
-        description: 樱花飘落动画的数量、速度、尺寸、透明度等参数
-
       - name: gallery-config
         label: 🖼️ 相册配置
         type: file
