@@ -70,7 +70,7 @@ const statsShareId = umamiConfig?.shareId ?? "";
 
 		<div class="home-data-layer__top-grid">
 			<DataMetricCard title="站点访问" eyebrow="VISITS" detail="访客与浏览统计载入中" icon="material-symbols:visibility-outline-rounded" hoverTitle="访问轨迹" hoverCode="01" variant="square" pills={visitPills} statKind="visits" visualImage={homeConfig.dataLayer.visitImage} />
-			<DataMetricCard title="文章档案" eyebrow="ARCHIVE" detail={`${posts.length} 篇文章 / ${categories.length} 个分类 / ${tags.length} 个标签`} icon="material-symbols:article-outline" hoverTitle="内容索引" hoverCode="02" variant="wide" pills={articlePills} statKind="articles" visualImage={homeConfig.dataLayer.archiveImage} />
+			<DataMetricCard title="文章档案" eyebrow="ARCHIVE" detail={`${posts.length} 篇文章 / ${categories.length} 个分类 / ${tags.length} 个标签`} icon="material-symbols:article-outline" hoverTitle="内容索引" hoverCode="02" variant="wide" pills={articlePills} statKind="articles" visualImage={homeConfig.dataLayer.archiveImage} href="/list/" />
 		</div>
 
 		<div class="home-guide-grid">

@@ -53,21 +53,6 @@ Firefly-Mod 是从 [Firefly](https://github.com/CuteLeaf/Firefly) 分支出的�
 | Lint + 自动修复 | `pnpm lint` |
 | 新建博客文章 | `pnpm new-post <filename>` |
 | 重新生成图标 | `pnpm icons` |
-| 构建/更新 AI 向量索引 | `pnpm build-index` |
-
-## AI 搜索向量索引
-```bash
-# 配置好.env文件后，执行以下命令：
-
-# 登录 Cloudflare（需要先删掉CLOUDFLARE_API_TOKEN环境变量）
-npx wrangler login
-
-# 构建/更新 AI 搜索向量索引（增量）（登录后需要配置CLOUDFLARE_API_TOKEN环境变量）
-pnpm build-index
-
-# 强制全量重建 AI 搜索向量索引（登录后需要配置CLOUDFLARE_API_TOKEN环境变量）
-pnpm build-index -- --force
-```
 
 ## 配置系统
 
@@ -94,7 +79,6 @@ pnpm build-index -- --force
 | `expressiveCodeConfig.ts` | 代码块渲染配置 |
 | `plantumlConfig.ts` | PlantUML 配置 |
 | `collectionsApiConfig.ts` | 收藏 API 配置 |
-| `aiSearchConfig.ts` | AI 搜索配置（模型、Embedding、向量索引） |
 
 ## CI/CD 工作流
 
@@ -120,7 +104,6 @@ pnpm build-index -- --force
 | 留言板 | 留言板固定使用 Waline `/guestbook/` 频道；启用前需在 `src/config/commentConfig.ts` 中配置 Waline，无需 Cloudflare KV 或项目 Worker 路由 |
 | 统计服务 | 站点访问统计通过 Umami 获取（`siteConfig.ts` 中配置 `analytics.umamiAnalytics`，Worker 中配置 `UMAMI_TOKEN` Secret） |
 | GitHub 贡献数据 | 归档页的 GitHub 贡献数据由 Worker 动态请求 GitHub GraphQL API，部署时需配置 `GITHUB_TOKEN` Secret |
-| AI 搜索 | 需 Cloudflare Vectorize 索引；构建索引需 `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID`；LLM/Embedding 默认走 Workers AI，也可在 `aiSearchConfig.ts` 中配置第三方 API（如魔搭社区）并设置 `AI_API_KEY` |
 | 图片上传（可选） | 留言板默认将不超过 128 KB 的图片内嵌到 Waline 留言；如需上传不超过 5 MB 的图片，可在 `commentConfig.waline.imageUploadURL` 中配置兼容的自建上传接口。文章图片仍建议使用独立图床 |
 
 ## Cloudflare Pages 部署方案
@@ -128,10 +111,6 @@ pnpm build-index -- --force
 因为是魔改[Firefly](https://github.com/CuteLeaf/Firefly)，所以部署方案与 Firefly 相同。
 
 其他与 Firefly 相同，除了以下几点：
-
-创建 AI 搜索向量索引：
-   - 索引名称需与 `src/config/aiSearchConfig.ts` 中的 `indexName` 一致（默认 `blog-ai-search`）
-   - 使用 wrangler 创建：`wrangler vectorize create --name blog-ai-search --dimensions 1024 --metric cosine`
 
 配置 GitHub 贡献数据：
    - 在 GitHub 的 **Settings → Developer settings → Personal access tokens → Fine-grained tokens** 创建 Personal Access Token，并设置合理的有效期。

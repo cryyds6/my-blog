@@ -49,18 +49,12 @@ export default defineConfig({
 	
 	base: "/",
 	trailingSlash: "always",
+	compressHTML: true,
 
 	// 图像优化配置
 	image: {
 		// 全局响应式布局
 		layout: "constrained",
-	},
-
-	experimental: {
-		// Rust 编译器以提升构建性能（实验性），部分平台可能会导致构建失败，可以根据需要启用或禁用
-		rustCompiler: false,
-		// 队列渲染以优化性能（实验性）
-		queuedRendering: { enabled: true },
 	},
 
 	integrations: [
@@ -238,6 +232,7 @@ export default defineConfig({
 	vite: {
 		plugins: [tailwindcss()],
 		server: {
+			allowedHosts: [".monkeycode-ai.online"],
 			watch: {
 				ignored: ["**/package/**", "**/Firefly-docs/**"],
 			},
@@ -279,7 +274,6 @@ export default defineConfig({
 							if (id.includes("pixi") || id.includes("live2d")) return "vendor-live2d";
 							if (id.includes("gsap")) return "vendor-gsap";
 						}
-						if (id.includes("AISearch")) return "vendor-ai";
 						if (id.includes("Guestbook")) return "vendor-guestbook";
 						if (id.includes("CalendarGrid")) return "vendor-calendar";
 					},

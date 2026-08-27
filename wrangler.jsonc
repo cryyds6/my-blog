@@ -13,29 +13,6 @@
 	"vars": {
 		"NODE_VERSION": "22"
 	},
-	"vectorize": [
-		{
-			"binding": "VECTORIZE",
-			"index_name": "blog-ai-search"
-		}
-	],
-	"ai": {
-		"binding": "AI"
-	},
-	"durable_objects": {
-		"bindings": [
-			{
-				"name": "AI_RATE_LIMITER",
-				"class_name": "RateLimiter"
-			}
-		]
-	},
-	"migrations": [
-		{
-			"tag": "v1-ai-rate-limiter",
-			"new_sqlite_classes": ["RateLimiter"]
-		}
-	],
 	"observability": {
 		"enabled": true,
 		"head_sampling_rate": 1

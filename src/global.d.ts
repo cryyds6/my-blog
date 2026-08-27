@@ -31,9 +31,7 @@ declare global {
 		floatingTOCListenersInitialized?: boolean;
 		__articleOutlineRailRuntime?: ArticleOutlineRailRuntime;
 		__floatingDockTOC?: TOCManager | null;
-		__aiSearchOpen?: boolean;
 		__searchLoadersReady?: boolean;
-		__aiSearchMounted?: boolean;
 		__searchModalMounted?: boolean;
 		_showLive2DWidget?: () => void;
 		_closeLive2DWidget?: () => void;

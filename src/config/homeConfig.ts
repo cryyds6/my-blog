@@ -166,7 +166,7 @@ export const homeConfig: HomeConfig = {
 			{
 				title: "博客特色",
 				english: "BLOG FEATURES",
-				description: "RAG 知识检索 · 归档热力图 · 结构化知识库",
+				description: "归档热力图 · 结构化知识库",
 				image: "/assets/images/home-truncated/3.webp",
 				alt: "博客特色",
 			},

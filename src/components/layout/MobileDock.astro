@@ -21,10 +21,10 @@ const showSpine = !!spineModelConfig?.enable;
 		<span class="mobile-dock__label">首页</span>
 	</button>
 
-	<!-- 左2: 搜索 -->
-	<button class="mobile-dock__btn" id="mobile-dock-search-btn" aria-label="搜索" type="button">
-		<span class="mobile-dock__icon"><Icon name="material-symbols:search-rounded" is:inline /></span>
-		<span class="mobile-dock__label">搜索</span>
+	<!-- 左2: 文章列表 -->
+	<button class="mobile-dock__btn" id="mobile-dock-article-btn" aria-label="文章" type="button">
+		<span class="mobile-dock__icon"><Icon name="material-symbols:list-alt-outline-rounded" is:inline /></span>
+		<span class="mobile-dock__label">文章</span>
 	</button>
 
 	<!-- 中: 菜单（凸出） -->
@@ -61,9 +61,9 @@ const showSpine = !!spineModelConfig?.enable;
 <div class="mobile-dock__sheet" id="mobile-dock-sheet">
 	<div class="mobile-dock__sheet-title">工具</div>
 	<div class="mobile-dock__sheet-grid">
-		<button class="mobile-dock__sheet-item" id="md-ai-search-btn" aria-label="AI 搜索" type="button">
-			<span class="mobile-dock__sheet-item-icon"><Icon name="ri:ai" is:inline /></span>
-			<span class="mobile-dock__sheet-item-label">AI 搜索</span>
+		<button class="mobile-dock__sheet-item" id="md-search-btn" aria-label="搜索" type="button">
+			<span class="mobile-dock__sheet-item-icon"><Icon name="material-symbols:search-rounded" is:inline /></span>
+			<span class="mobile-dock__sheet-item-label">搜索</span>
 		</button>
 		{showMusic && (
 			<button class="mobile-dock__sheet-item" id="md-music-btn" aria-label="音乐" type="button">
@@ -176,10 +176,12 @@ const showSpine = !!spineModelConfig?.enable;
 			}
 		});
 
-		// ── 搜索：走全局 SearchModal 控制器，不依赖被移动端 CSS 隐藏的 Navbar ──
-		document.getElementById("mobile-dock-search-btn")?.addEventListener("click", (e) => {
+		// ── 文章列表导航 ──
+		document.getElementById("mobile-dock-article-btn")?.addEventListener("click", (e) => {
 			e.stopPropagation();
-			requestSearchModalToggle();
+			if (window.location.pathname !== "/list/") {
+				window.navigateToPage("/list/");
+			}
 		});
 
 		// ── 菜单（触发隐藏的 Navbar 汉堡按钮） ──
@@ -306,11 +308,11 @@ const showSpine = !!spineModelConfig?.enable;
 			});
 		});
 
-		// AI 搜索：直接 dispatch 事件
-		document.getElementById("md-ai-search-btn")?.addEventListener("click", (e) => {
+		// 搜索：走全局 SearchModal 控制器
+		document.getElementById("md-search-btn")?.addEventListener("click", (e) => {
 			e.stopPropagation();
 			closeSheet();
-			window.dispatchEvent(new CustomEvent("toggle-ai-search"));
+			requestSearchModalToggle();
 		});
 
 		// 回顶部

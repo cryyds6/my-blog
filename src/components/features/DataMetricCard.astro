@@ -1,4 +1,6 @@
 ---
+import Icon from "@components/common/Icon.astro";
+
 type Pill = {
 	label: string;
 	value: string | number;
@@ -17,6 +19,7 @@ interface Props {
 	class?: string;
 	statKind?: "visits" | "articles";
 	visualImage?: string;
+	href?: string;
 }
 
 const {
@@ -30,14 +33,19 @@ const {
 	class: className = "",
 	statKind,
 	visualImage,
+	href,
 } = Astro.props;
+
+const Tag = href ? "a" : "article";
 ---
 
-<article
+<Tag
+	href={href}
 	class:list={[
 		"data-card",
 		"data-card--metric",
 		`data-card--${variant}`,
+		href && "data-card--link",
 		className,
 	]}
 	data-card-interactive
@@ -60,6 +68,11 @@ const {
 		<h3 class="data-card__title">{title}</h3>
 		<p class="data-card__detail">{detail}</p>
 	</div>
+	{href && (
+		<span class="data-card__arrow" aria-hidden="true">
+			<Icon name="material-symbols:arrow-forward-rounded" is:inline />
+		</span>
+	)}
 	<div class="data-card__hover" aria-hidden="true">
 		<div class="data-card__hover-orb"></div>
 		<div class="data-card__hover-header">
@@ -84,4 +97,4 @@ const {
 			</span>
 		))}
 	</div>
-</article>
+</Tag>
