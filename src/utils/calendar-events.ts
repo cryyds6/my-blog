@@ -1,5 +1,5 @@
-import type { HolidayEntry } from "@/utils/holiday-entries";
 import type { BirthdayItem, ScheduleItem } from "@/types/config";
+import type { HolidayEntry } from "@/utils/holiday-entries";
 import {
 	getLunarMonthDayChinese,
 	resolveYearlyDate,

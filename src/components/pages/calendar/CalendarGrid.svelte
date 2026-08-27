@@ -3,7 +3,6 @@ import { onDestroy, onMount } from "svelte";
 import Icon from "@/components/common/Icon.svelte";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
-import type { HolidayEntry } from "@/utils/holiday-entries";
 import type { BirthdayItem, ScheduleItem } from "@/types/config";
 import {
 	bucketize,
@@ -17,6 +16,7 @@ import {
 	formatYmd,
 	type PostMeta,
 } from "@/utils/calendar-events";
+import type { HolidayEntry } from "@/utils/holiday-entries";
 import { getLunarDayChinese } from "@/utils/lunar-utils";
 import { eventTypeMeta } from "./eventTypes";
 

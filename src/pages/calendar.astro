@@ -3,15 +3,15 @@ import CalendarGrid from "@components/pages/calendar/CalendarGrid.svelte";
 import EventDetailPanel from "@components/pages/calendar/EventDetailPanel.svelte";
 import EventOverview from "@components/pages/calendar/EventOverview.svelte";
 import PageTitle from "@/components/common/PageTitle.astro";
-import { getAllPostMeta } from "@/utils/all-post-meta";
 import { calendarConfig, siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
+import { getAllPostMeta } from "@/utils/all-post-meta";
 import "@/styles/pages/calendar.css";
+import type { PostMeta } from "@/utils/calendar-events";
 import type { HolidayEntry } from "@/utils/holiday-entries";
 import { getHolidayEntries } from "@/utils/holiday-entries";
-import type { PostMeta } from "@/utils/calendar-events";
 
 if (!siteConfig.pages.calendar) {
 	return Astro.redirect("/404/");
