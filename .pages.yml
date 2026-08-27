@@ -316,6 +316,13 @@ content:
         format: code
         description: Twikoo / Waline / Giscus / Artalk / Disqus 评论系统配置
 
+      - name: calendar-config
+        label: 📅 日历页面
+        type: file
+        path: src/config/calendarConfig.ts
+        format: code
+        description: 日历页标题、节日 API（timor.tech）、内置节日（含农历）、生日与日程安排配置
+
       - name: music-config
         label: 🎵 音乐播放器
         type: file
