@@ -385,16 +385,15 @@
 
 	.nearest-grid {
 		display: flex;
-		gap: 0.5rem;
-		overflow-x: auto;
-		padding-bottom: 0.5rem;
-		scroll-snap-type: x mandatory;
-		-webkit-overflow-scrolling: touch;
+		flex-direction: column;
+		gap: 0.625rem;
+		padding-bottom: 0;
 	}
 
 	.nearest-card {
-		flex: 0 0 82%;
-		scroll-snap-align: start;
+		flex: none;
+		width: 100%;
+		scroll-snap-align: none;
 	}
 
 	.day-cell {

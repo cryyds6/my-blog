@@ -3,12 +3,14 @@ import CalendarGrid from "@components/pages/calendar/CalendarGrid.svelte";
 import EventDetailPanel from "@components/pages/calendar/EventDetailPanel.svelte";
 import EventOverview from "@components/pages/calendar/EventOverview.svelte";
 import PageTitle from "@/components/common/PageTitle.astro";
+import { getAllPostMeta } from "@/utils/all-post-meta";
 import { calendarConfig, siteConfig } from "@/config";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
 import MainGridLayout from "@/layouts/MainGridLayout.astro";
 import "@/styles/pages/calendar.css";
-import type { HolidayEntry } from "@/pages/api/holidays.json";
+import type { HolidayEntry } from "@/utils/holiday-entries";
+import { getHolidayEntries } from "@/utils/holiday-entries";
 import type { PostMeta } from "@/utils/calendar-events";
 
 if (!siteConfig.pages.calendar) {
@@ -27,16 +29,11 @@ const { futureDays, maxItems } = overview;
 const now = new Date();
 const years = [now.getFullYear() - 1, now.getFullYear(), now.getFullYear() + 1];
 
-// SSR 拉取节日数据 & 文章数据
-const [holidaysRes, postsRes] = await Promise.all([
-	fetch(new URL("/api/holidays.json", Astro.url)),
-	fetch(new URL("/api/allPostMeta.json", Astro.url)),
+// SSR 直接调用数据函数（自 fetch 在代理/SSR 环境下会失败）
+const [holidays, posts] = await Promise.all([
+	getHolidayEntries() as Promise<HolidayEntry[]>,
+	getAllPostMeta() as Promise<PostMeta[]>,
 ]);
-
-const holidays = (
-	holidaysRes.ok ? await holidaysRes.json() : []
-) as HolidayEntry[];
-const posts = (postsRes.ok ? await postsRes.json() : []) as PostMeta[];
 
 const overviewProps = {
 	holidays,

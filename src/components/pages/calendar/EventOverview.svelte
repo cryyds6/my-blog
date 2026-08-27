@@ -2,7 +2,7 @@
 import { onMount } from "svelte";
 import I18nKey from "@/i18n/i18nKey";
 import { i18n } from "@/i18n/translation";
-import type { HolidayEntry } from "@/pages/api/holidays.json";
+import type { HolidayEntry } from "@/utils/holiday-entries";
 import type { BirthdayItem, ScheduleItem } from "@/types/config";
 import {
 	bucketize,

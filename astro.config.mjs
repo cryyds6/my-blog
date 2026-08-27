@@ -237,7 +237,13 @@ export default defineConfig({
 				ignored: ["**/package/**", "**/Firefly-docs/**"],
 			},
 			proxy: {
-				"/api": {
+				// 仅代理 Worker 处理的动态路由；其余 /api/*（如预渲染的
+				// allPostMeta.json / holidays.json）交由 Astro dev 直接响应
+				"/api/github-contributions": {
+					target: "http://localhost:8787",
+					changeOrigin: true,
+				},
+				"/api/poster-image": {
 					target: "http://localhost:8787",
 					changeOrigin: true,
 				},
