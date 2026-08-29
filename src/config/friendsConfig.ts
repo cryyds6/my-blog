@@ -119,7 +119,7 @@ export const friendsConfig: FriendLink[] = [
 			"https://img.3181314.xyz/file/图标/1771431908690_769306e305725267e1c50d726311ba61.jpg",
 		desc: "凉白导航页(Liangbai Spage)致力于简洁高效无广告的上网导航和搜索入口，沉淀最具价值链接，全站无商业推广，简约而不简单。",
 		siteurl: "https://dh.liangbai.xyz/",
-		tags: ["导航网"],
+		tags: ["导航"],
 		weight: 5,
 		enabled: true,
 	},
