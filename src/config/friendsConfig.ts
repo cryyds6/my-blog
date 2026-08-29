@@ -33,7 +33,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 		{
 			title: "申请方式",
 			content:
-				"可将信息发送至邮箱 1044192982@qq.com ，或者点击下方自助申请友链按钮。",
+				"可将信息发送至邮箱 1044192982@qq.com，oddg@foxmail.com，或者点击下方自助申请友链按钮。",
 		},
 		{
 			title: "互换原则",
