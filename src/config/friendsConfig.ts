@@ -25,7 +25,7 @@ export const friendsPageConfig: FriendsPageConfig = {
 		desc: "Odd Gentleman的个人博客，记录思考、技术与生活碎片。",
 		url: "https://www.3181314.xyz",
 		avatar: "https://www.3181314.xyz/icon.jpeg",
-		email: "crqgxs@qq.com",
+		email: "oddg@foxmail.com",
 	},
 
 	// 注意事项，用于友链申请指南弹窗中的注意事项展示
