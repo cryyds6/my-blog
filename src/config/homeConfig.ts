@@ -234,7 +234,7 @@ export const homeConfig: HomeConfig = {
 		{
 			name: "Email",
 			icon: "fa7-solid:envelope",
-			url: "mailto:crqgxs@qq.com",
+			url: "mailto:oddg@foxmail.com",
 			showName: false,
 		},
 		{
