@@ -20,7 +20,7 @@ export const footerConfig: FooterConfig = {
 		},
 		{
 			label: "邮箱",
-			href: "mailto:crqgxs@qq.com",
+			href: "mailto:oddg@foxmail.com",
 			icon: "material-symbols:mail",
 		},
 	],
