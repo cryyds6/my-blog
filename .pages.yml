@@ -366,7 +366,7 @@ content:
         description: PlantUML 服务器地址和明暗主题配置
 
       - name: collectionsapi-config
-        label: 📐 PlantUML 图表
+        label: 📐 推荐导航栏
         type: file
         path: src/config/collectionsApiConfig.ts
         format: code
