@@ -127,6 +127,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 						"365工具箱（toolbox365.cn）是一个面向公网用户的免费在线小工具集合， 目前提供 230 余款常用工具，覆盖 PDF 处理、图片处理、音频/视频处理、开发辅助、 中文工具、财务计算、生活实用等多个分类。",
 					icon: favicon("www.toolbox365.cn"),
 					enabled: true,
+                },
 				{
 					name: "工具箱 | 奇妙工具箱",
 					url: "https://www.magicalbox.cn/",
@@ -134,7 +135,6 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 						"奇妙工具箱提供100+免费在线工具，包括视频压缩、音频转换、图片处理、PDF操作、二维码生成...",
 					icon: favicon("www.magicalbox.cn"),
 					enabled: true,
-				},
 				},
                 {
 					name: "图片处理 | 在线图像工具箱",
