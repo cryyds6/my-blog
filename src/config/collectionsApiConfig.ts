@@ -353,7 +353,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 				{
 					name: "MaiBot",
 					url: "https://docs.mai-mai.org/",
-					description: "基于 LLM 的交互式智能体。不仅仅是一个机器人，而是一个活跃在对话中的数字生命,
+					description: "基于 LLM 的交互式智能体。不仅仅是一个机器人，而是一个活跃在对话中的数字生命",
 					icon: favicon("docs.mai-mai.org"),
 					enabled: true,
 				},
