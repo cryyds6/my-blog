@@ -54,6 +54,21 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 		{
 			category: "推荐",
 			items: [
+                {
+                    name: "PagesCMS",
+                    url: "https://app.pagescms.org",
+                    description: "现代化网页内容管理系统，支持可视化编辑与实时预览，适用于静态站点生成。",
+                    icon: favicon("app.pagescms.org"),
+                    enabled: true,
+                },
+                {
+					name: "网络工具 | WHO.CX",
+					url: "https://who.cx/",
+					description:
+						"提供 Whois 关键信息提取与域名价格查询接口，支持 POST 和 GET 请求，返回结构化数据。",
+					icon: favicon("who.cx"),
+					enabled: true,
+				},
 				{
 					name: "网络工具 | ITDOG",
 					url: "https://www.itdog.cn/",
@@ -93,7 +108,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					enabled: true,
 				},
 				{
-					name: "代码库 | ",
+					name: "代码库 | GitHub",
 					url: "https://github.com/",
 					description: "GitHub 是全球领先的代码托管与开发者协作平台。",
 					icon: favicon("github.com"),
