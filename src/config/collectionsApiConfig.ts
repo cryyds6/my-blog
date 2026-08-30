@@ -346,14 +346,14 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					name: "AstrBot",
 					url: "https://astrbot.app/",
 					description:
-						"多平台聊天机器人框架，支持 QQ、Discord、Telegram 等主流平台。"",
+						"多平台聊天机器人框架，支持 QQ、Discord、Telegram 等主流平台。",
 					icon: favicon("astrbot.app"),
 					enabled: true,
 				},
 				{
 					name: "MaiBot",
 					url: "https://docs.mai-mai.org/",
-					description: "基于 LLM 的交互式智能体。不仅仅是一个机器人，而是一个活跃在对话中的"数字生命"",
+					description: "基于 LLM 的交互式智能体。不仅仅是一个机器人，而是一个活跃在对话中的数字生命,
 					icon: favicon("docs.mai-mai.org"),
 					enabled: true,
 				},
