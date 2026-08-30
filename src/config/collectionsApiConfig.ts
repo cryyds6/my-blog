@@ -54,14 +54,15 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 		{
 			category: "推荐",
 			items: [
-                {
-                    name: "PagesCMS",
-                    url: "https://app.pagescms.org",
-                    description: "现代化网页内容管理系统，支持可视化编辑与实时预览，适用于静态站点生成。",
-                    icon: favicon("app.pagescms.org"),
-                    enabled: true,
-                },
-                {
+				{
+					name: "PagesCMS",
+					url: "https://app.pagescms.org",
+					description:
+						"现代化网页内容管理系统，支持可视化编辑与实时预览，适用于静态站点生成。",
+					icon: favicon("app.pagescms.org"),
+					enabled: true,
+				},
+				{
 					name: "网络工具 | WHO.CX",
 					url: "https://who.cx/",
 					description:
