@@ -2,7 +2,7 @@
 title: Waline评论邮件模板——紫罗兰永恒花园信笺
 published: 2026-08-30
 description: 使用紫罗兰永恒花园信笺风格定制Waline评论邮件模板，支持环境变量与服务端入口文件两种配置方式。
-image: https://img.3181314.xyz/file/博客/1788070211763_8958076dc393c8df_edit_438668507897086.png
+image: https://img.3181314.xyz/file/博客/1788072859103_Screenshot_20260830_145309.jpg
 tags: ["部署教程", "Waline", "邮件模板"]
 category: 部署教程
 draft: false
