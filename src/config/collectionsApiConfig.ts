@@ -121,6 +121,22 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 			category: "工具箱",
 			items: [
 				{
+					name: "工具箱 | 365工具箱",
+					url: "https://www.toolbox365.cn/",
+					description:
+						"365工具箱（toolbox365.cn）是一个面向公网用户的免费在线小工具集合， 目前提供 230 余款常用工具，覆盖 PDF 处理、图片处理、音频/视频处理、开发辅助、 中文工具、财务计算、生活实用等多个分类。",
+					icon: favicon("www.toolbox365.cn"),
+					enabled: true,
+				{
+					name: "工具箱 | 奇妙工具箱",
+					url: "https://www.magicalbox.cn/",
+					description:
+						"奇妙工具箱提供100+免费在线工具，包括视频压缩、音频转换、图片处理、PDF操作、二维码生成...",
+					icon: favicon("www.magicalbox.cn"),
+					enabled: true,
+				},
+				},
+                {
 					name: "图片处理 | 在线图像工具箱",
 					url: "https://phototool.cn/",
 					description:
@@ -179,6 +195,14 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 		{
 			category: "AI 助手",
 			items: [
+              	{
+					name: "DeepSeek",
+					url: "https://chat.deepseek.com/",
+					description:
+						"DeepSeek 官方推出的 AI 助手，免费体验与全球领先 AI 模型的互动交流",
+					icon: favicon("chat.deepseek.com"),
+					enabled: true,
+				},
 				{
 					name: "豆包",
 					url: "https://www.doubao.com/",
@@ -322,15 +346,15 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 					name: "AstrBot",
 					url: "https://astrbot.app/",
 					description:
-						"多平台聊天机器人框架，支持 QQ、Discord、Telegram 等主流平台。",
+						"多平台聊天机器人框架，支持 QQ、Discord、Telegram 等主流平台。"",
 					icon: favicon("astrbot.app"),
 					enabled: true,
 				},
 				{
-					name: "Mai-bot",
+					name: "MaiBot",
 					url: "https://docs.mai-mai.org/",
-					description: "音乐游戏 MaiMai 相关机器人，支持查分、排位等功能。",
-					icon: favicon("mai-mai.org"),
+					description: "基于 LLM 的交互式智能体。不仅仅是一个机器人，而是一个活跃在对话中的"数字生命"",
+					icon: favicon("docs.mai-mai.org"),
 					enabled: true,
 				},
 				{
