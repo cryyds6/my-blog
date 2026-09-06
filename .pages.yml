@@ -98,6 +98,7 @@ content:
             options:
               multiple: true
               creatable: true
+            description: 自由输入标签，按回车添加
 
           - name: category
             label: 分类
