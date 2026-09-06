@@ -94,8 +94,8 @@ content:
 
           - name: tags
             label: 标签
-            type: tags
-            description: 输入标签，按回车添加
+            type: string
+            description: 多个标签用逗号分隔
 
           - name: category
             label: 分类
