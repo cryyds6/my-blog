@@ -173,8 +173,8 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
-          fields: [title, published, updated, draft]
-          sort: ["published desc", "title asc"]
+          fields: [published]
+          sort: ["published desc"]
           search: [content]
           default:
             sort: published
