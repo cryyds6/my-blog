@@ -83,6 +83,11 @@ content:
             description: 简短描述，留空则自动截取正文
 
           - name: image
+            label: 封面图（上传）
+            type: image
+            description: 文章封面图片路径
+            
+          - name: image
             label: 封面图
             type: string
             description: 文章封面图片路径
