@@ -169,17 +169,30 @@ content:
         label: 📄 博客原文
         type: collection
         path: src/content/posts
-        format: code
+        format: yaml-frontmatter
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
           fields: [published]
           sort: ["published desc"]
-          search: [content]
+          search: [title, content]
           default:
             sort: published
             order: desc
         fields:
+          - name: title
+            label: 标题
+            type: string
+            required: true
+
+          - name: published
+            label: 发布时间
+            type: date
+            required: true
+            options:
+              time: false
+              format: yyyy-MM-dd
+
           - name: content
             label: 完整文件源码
             type: code
