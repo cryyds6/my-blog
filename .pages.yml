@@ -84,7 +84,7 @@ content:
 
           - name: image
             label: 封面图
-            type: image
+            type: string
             description: 文章封面图片路径
 
           - name: tags
