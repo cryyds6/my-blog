@@ -24,7 +24,7 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 				{
 					name: "图床 | 图片托管",
 					url: "https://img.3181314.xyz/login",
-					description: "自建图片托管服务，支持图片等上传与外链分享。",
+					description: "（自用）自建CloudFlare ImgBed图片托管服务，支持图片等上传与外链分享，WebDAV 服务",
 					icon: "https://www.3181314.xyz/icon.jpeg",
 					enabled: true,
 				},
