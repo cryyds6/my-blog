@@ -1,13 +1,18 @@
 ---
 title: VPS快速部署酒馆（SillyTavern）教程
-published: 2025-09-31
-description: 使用宝塔面板和Docker在VPS上一键部署SillyTavern酒馆，支持国内外节点，附带基础认证配置。
-image: 未设置
-tags: ["部署教程", "Docker", "VPS"]
-category: 部署教程
+published: 2026-09-06
+updated: 2026-09-06
 draft: false
+description: 使用宝塔面板和Docker在VPS上一键部署SillyTavern酒馆，支持国内外节点，附带基础认证配置。
+image: https://img.3181314.xyz/file/博客/1788688066774_PixPin_2026-09-06_17-45-39.png
+tags:
+  - 部署
+  - 教程
+  - Docker
+category: 部署教程
+pinned: false
+comment: true
 ---
-
 VPS快速部署酒馆（SillyTavern）教程
 
 面板推荐使用宝塔面板。
@@ -89,7 +94,7 @@ docker compose up -d
 
 参考
 
-官方开源地址：https://github.com/SillyTavern/SillyTavern
+官方开源地址：[https://github.com/SillyTavern/SillyTavern](https://github.com/SillyTavern/SillyTavern)
 
 ---
 
