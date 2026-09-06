@@ -94,11 +94,8 @@ content:
 
           - name: tags
             label: 标签
-            type: select
-            options:
-              multiple: true
-              creatable: true
-            description: 自由输入标签，按回车添加
+            type: tags
+            description: 输入标签，按回车添加
 
           - name: category
             label: 分类
