@@ -94,8 +94,8 @@ content:
 
           - name: tags
             label: 标签
-            type: string
-            description: 多个标签用逗号分隔
+            type: text
+            description: 输入数组格式，如：["免费托管", "静态网站", "动态部署"]
 
           - name: category
             label: 分类
