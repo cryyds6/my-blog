@@ -4,6 +4,7 @@ published: 2026-09-06
 updated: 2026-09-06
 draft: false
 description: 详解为 Astro 博客配置 Pages CMS 的完整流程，包含托管版部署、配置文件解读与自托管方案，实现 Git 原生内容管理体验。
+tags: Astro, CMS, Pages CMS, 部署教程
 category: 部署教程
 pinned: false
 comment: true
