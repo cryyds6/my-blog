@@ -173,12 +173,9 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
-          fields: [published]
-          sort: ["published desc"]
-          search: [title, content]
-          default:
-            sort: published
-            order: desc
+          fields: [title, published, tags, category, draft, pinned]
+          sort: ["published desc", "title asc"]
+          search: [title, description, tags, category]
         fields:
           - name: title
             label: 标题
