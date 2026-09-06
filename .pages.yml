@@ -164,7 +164,7 @@ content:
             type: rich-text
             required: true
             
-      # 📄 博客原文 - 只读查看
+      # 📄 博客原文 - Markdown 源码编辑器（可编辑、按时间排序）
       - name: post-raw
         label: 📄 博客原文
         type: collection
@@ -173,37 +173,41 @@ content:
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
-          fields: [title, body]
-          sort: ["title asc"]
+          fields: [title, published, updated]
+          sort: ["published desc", "title asc"]
           search: [title, body]
+          default:
+            sort: published
+            order: desc
         fields:
           - name: title
             label: 标题
             type: string
-            readonly: true
+            required: true
+            description: 文章标题
+
+          - name: published
+            label: 发布时间
+            type: date
+            required: true
+            options:
+              time: false
+              format: yyyy-MM-dd
+
+          - name: updated
+            label: 更新时间
+            type: date
+            options:
+              time: false
+              format: yyyy-MM-dd
 
           - name: body
-            label: 原文内容
+            label: Markdown 原文
             type: code
             options:
               format: markdown
-            readonly: true
-            description: 只读模式，查看 Markdown 源文件内容
-            
-      # 关于页面
-      - name: about
-        label: 📄 关于页面
-        type: file
-        path: src/content/spec/about.md
-        format: yaml-frontmatter
-        fields:
-          - name: title
-            label: 页面标题
-            type: string
-            default: "关于我"
-          - name: body
-            label: 正文
-            type: rich-text
+            required: true
+            description: 直接编辑 Markdown 源码
 
       # 友情链接
       - name: friends
