@@ -94,8 +94,20 @@ content:
 
           - name: tags
             label: 标签
-            type: tags
-            description: 输入标签，按回车添加
+            type: select
+            options:
+              multiple: true
+              creatable: true
+              values:
+                - { label: 免费托管, value: 免费托管 }
+                - { label: 静态网站, value: 静态网站 }
+                - { label: 动态部署, value: 动态部署 }
+                - { label: AI项目, value: AI项目 }
+                - { label: 演示, value: 演示 }
+                - { label: 示例, value: 示例 }
+                - { label: 部署教程, value: 部署教程 }
+                - { label: 资源推荐, value: 资源推荐 }
+            description: 选择或输入标签
 
           - name: category
             label: 分类
