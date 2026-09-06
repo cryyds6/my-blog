@@ -102,7 +102,7 @@ content:
           - name: category
             label: 分类
             type: string
-            description: 文章分类（如"文章示例"、"技术笔记"）
+            description: 文章分类（如"资源推荐"、"部署教程"、"生活日常"、"感悟杂记"）
 
           - name: lang
             label: 语言
@@ -157,24 +157,6 @@ content:
           - name: body
             label: 正文
             type: rich-text
-            required: true
-            
-      # 📄 博客原文
-      - name: post-raw
-        label: 📄 博客原文
-        type: collection
-        path: src/content/posts
-        format: code
-        exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
-        view:
-          primary: filename
-          fields: []
-        fields:
-          - name: body
-            label: 完整文件源码（含 Frontmatter 和正文）
-            type: code
-            options:
-              format: markdown
             required: true
 
       # 关于页面
