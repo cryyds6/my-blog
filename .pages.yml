@@ -99,14 +99,54 @@ content:
               multiple: true
               creatable: true
               values:
-                - { label: 免费托管, value: 免费托管 }
-                - { label: 静态网站, value: 静态网站 }
-                - { label: 动态部署, value: 动态部署 }
-                - { label: AI项目, value: AI项目 }
-                - { label: 演示, value: 演示 }
-                - { label: 示例, value: 示例 }
-                - { label: 部署教程, value: 部署教程 }
-                - { label: 资源推荐, value: 资源推荐 }
+                # 通用标签
+                - { label: 分享, value: 分享 }
+                - { label: 教程, value: 教程 }
+                - { label: 部署, value: 部署 }
+                - { label: 博客, value: 博客 }
+                - { label: 开源, value: 开源 }
+                - { label: 免费, value: 免费 }
+                - { label: 工具, value: 工具 }
+                - { label: 资源, value: 资源 }
+                - { label: 效率, value: 效率 }
+                - { label: 开发, value: 开发 }
+                - { label: 技术, value: 技术 }
+                - { label: 总结, value: 总结 }
+                
+                # 资源推荐类
+                - { label: 推荐, value: 推荐 }
+                - { label: 网站, value: 网站 }
+                - { label: 软件, value: 软件 }
+                - { label: 源码, value: 源码 }
+                - { label: AI, value: AI }
+                - { label: AI工具, value: AI工具 }
+                - { label: 开源项目, value: 开源项目 }
+                
+                # 部署教程类
+                - { label: 搭建, value: 搭建 }
+                - { label: 服务器, value: 服务器 }
+                - { label: VPS, value: VPS }
+                - { label: 域名, value: 域名 }
+                - { label: Docker, value: Docker }
+                - { label: Cloudflare, value: Cloudflare }
+                - { label: EdgeOne, value: EdgeOne }
+                - { label: 自动化, value: 自动化 }
+                - { label: Git, value: Git }
+                - { label: CDN, value: CDN }
+                
+                # 生活日常类
+                - { label: 生活, value: 生活 }
+                - { label: 日常, value: 日常 }
+                - { label: 个人, value: 个人 }
+                - { label: 随笔, value: 随笔 }
+                
+                # 感悟杂记类
+                - { label: 感悟, value: 感悟 }
+                - { label: 思考, value: 思考 }
+                - { label: 人生, value: 人生 }
+                - { label: 读书, value: 读书 }
+                - { label: 观点, value: 观点 }
+                - { label: 碎碎念, value: 碎碎念 }
             description: 选择或输入标签
 
           - name: category
