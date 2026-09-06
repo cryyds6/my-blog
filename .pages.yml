@@ -164,50 +164,29 @@ content:
             type: rich-text
             required: true
             
-      # 📄 博客原文 - Markdown 源码编辑器（可编辑、按时间排序）
+      # 📄 博客原文 - 完整文件源码编辑（Frontmatter + 正文一起）
       - name: post-raw
         label: 📄 博客原文
         type: collection
         path: src/content/posts
-        format: yaml-frontmatter
+        format: code
         exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
         view:
           primary: title
-          fields: [title, published, updated]
+          fields: [title, published, updated, draft]
           sort: ["published desc", "title asc"]
-          search: [title, body]
+          search: [content]
           default:
             sort: published
             order: desc
         fields:
-          - name: title
-            label: 标题
-            type: string
-            required: true
-            description: 文章标题
-
-          - name: published
-            label: 发布时间
-            type: date
-            required: true
-            options:
-              time: false
-              format: yyyy-MM-dd
-
-          - name: updated
-            label: 更新时间
-            type: date
-            options:
-              time: false
-              format: yyyy-MM-dd
-
-          - name: body
-            label: Markdown 原文
+          - name: content
+            label: 完整文件源码
             type: code
             options:
               format: markdown
             required: true
-            description: 直接编辑 Markdown 源码
+            description: 整个 .md 文件的内容，包含 Frontmatter 和正文
 
       # 友情链接
       - name: friends
