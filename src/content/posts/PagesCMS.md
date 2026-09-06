@@ -2,7 +2,7 @@
 title: Pages CMS 部署教程：为 Astro 博客装上 Git 原生 CMS
 published: 2026-09-06
 updated: 2026-09-06
-draft: true
+draft: false
 description: 详解为 Astro 博客配置 Pages CMS 的完整流程，包含托管版部署、配置文件解读与自托管方案，实现 Git 原生内容管理体验。
 category: 部署教程
 pinned: false
@@ -58,7 +58,6 @@ Pages CMS 就是答案。它不是一个存储你内容的第三方数据库，�
 6. **最关键的一步**：将我文末附上的配置文件内容，粘贴到新建的 `.pages.yml` 中。这份配置是为 Firefly 博客主题深度定制的，涵盖了文章、关于页、友链以及各种站点配置。
 7. 保存文件并提交到仓库主分支。
 8. 刷新 Pages CMS 页面，你就会在左侧导航栏看到「📝 博客文章」、「⚙️ 站点设置」等分组了。现在，点击「博客文章」，试试新建一篇吧！
-
 
 ## 附录：Firefly 博客完整配置
 
