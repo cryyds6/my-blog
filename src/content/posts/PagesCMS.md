@@ -8,24 +8,6 @@ category: 部署教程
 pinned: false
 comment: true
 ---
----
-
-title: **Pages CMS 部署教程：为 Astro 博客装上 Git 原生 CMS**
-
-published: 2026-09-06
-
-description: 详解为 Astro 博客配置 Pages CMS 的完整流程，包含托管版部署、配置文件解读与自托管方案，实现 Git 原生内容管理体验。
-
-image: [https://picsum.photos/seed/pagescms/800/420](https://picsum.photos/seed/pagescms/800/420)
-
-tags: ["Astro", "CMS", "Pages CMS", "部署教程"]
-
-category: 部署教程
-
-draft: false
-
----
-
 **Pages CMS 部署教程：为 Astro 博客装上 Git 原生 CMS**
 
 作为一个 Astro 博客的作者，你可能早已习惯了用 Markdown 写文章、用 Git 做版本控制的美妙体验。但每当想写点东西时，总得打开代码编辑器，在 Frontmatter 和正文之间来回切换，多少有点不够「丝滑」。
