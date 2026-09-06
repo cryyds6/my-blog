@@ -182,6 +182,21 @@ content:
               format: markdown
             required: true
 
+      # 关于页面
+      - name: about
+        label: 📄 关于页面
+        type: file
+        path: src/content/spec/about.md
+        format: yaml-frontmatter
+        fields:
+          - name: title
+            label: 页面标题
+            type: string
+            default: "关于我"
+          - name: body
+            label: 正文
+            type: rich-text
+            
       # 友情链接
       - name: friends
         label: 🔗 友情链接
