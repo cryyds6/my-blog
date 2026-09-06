@@ -163,7 +163,33 @@ content:
             label: 正文
             type: rich-text
             required: true
+            
+      # 📄 博客原文 - 只读查看
+      - name: post-raw
+        label: 📄 博客原文
+        type: collection
+        path: src/content/posts
+        format: yaml-frontmatter
+        exclude: ["**/images/**", "**/*.avif", "**/*.webp", "**/*.png", "**/*.jpg"]
+        view:
+          primary: title
+          fields: [title, body]
+          sort: ["title asc"]
+          search: [title, body]
+        fields:
+          - name: title
+            label: 标题
+            type: string
+            readonly: true
 
+          - name: body
+            label: 原文内容
+            type: code
+            options:
+              format: markdown
+            readonly: true
+            description: 只读模式，查看 Markdown 源文件内容
+            
       # 关于页面
       - name: about
         label: 📄 关于页面
