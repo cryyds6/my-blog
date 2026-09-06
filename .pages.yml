@@ -88,7 +88,7 @@ content:
             description: 文章封面图片路径
             
           - name: image
-            label: 封面图
+            label: 封面图（网络）
             type: string
             description: 文章封面图片路径
 
