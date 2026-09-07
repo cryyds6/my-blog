@@ -207,11 +207,10 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 				{
 					name: "元宝",
 					url: "https://yuanbao.tencent.com/",
-					description:
-						"腾讯开发的人工智能助手，基于混元大模型打造。",
+					description: "腾讯开发的人工智能助手，基于混元大模型打造。",
 					icon: favicon("yuanbao.tencent.com"),
 					enabled: true,
-				},              
+				},
 				{
 					name: "豆包",
 					url: "https://www.doubao.com/",
@@ -219,12 +218,11 @@ export const collectionsApiConfig: CollectionsApiConfig = {
 						"字节跳动推出的 AI 助手，支持对话、写作、翻译与编程辅助。",
 					icon: favicon("doubao.com"),
 					enabled: true,
-				},              
+				},
 				{
 					name: "千问",
 					url: "https://www.qianwen.com/chat/",
-					description:
-						"千问-阿里AI助手 - 开启AI智能办公新时代",
+					description: "千问-阿里AI助手 - 开启AI智能办公新时代",
 					icon: favicon("www.qianwen.com"),
 					enabled: true,
 				},
